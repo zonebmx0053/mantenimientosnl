@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Política de Privacidad | Mantenimientos NL - Marbella</title>
+    <meta name="description" content="Información sobre el tratamiento de tus datos personales por parte de Mantenimientos NL en Marbella. Tu privacidad es nuestra prioridad.">
+    <meta name="robots" content="noindex, follow">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /* ==========================================================================
+           1. VARIABLES Y CONFIGURACIÓN BASE
+           ========================================================================== */
+        :root {
+            --color-fondo-verde: #DDE5DF; 
+            --color-fondo-seccion: #C8D6CE; 
+            --color-cajas: #ECF1ED; 
+            --color-verde: #2E7D32; 
+            --color-verde-oscuro: #1B5E20; 
+            --color-verde-musgo: #4A634E; 
+            --color-texto-oscuro: #1A2F20; 
+            --color-texto-suave: #4A5D4E; 
+            --color-blanco-roto: #F5F8F6; 
+            
+            --radio-bordes: 16px;      
+            --radio-bordes-pro: 24px;  
+            --sombra-suave: 0 5px 20px rgba(27, 94, 32, 0.08); 
+            --sombra-hover: 0 15px 35px rgba(27, 94, 32, 0.15);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; scroll-behavior: smooth; }
+
+        body { 
+            background-color: var(--color-fondo-verde); 
+            background-image: linear-gradient(180deg, var(--color-fondo-verde) 0%, var(--color-fondo-seccion) 100%);
+            color: var(--color-texto-oscuro); 
+            padding-top: 120px; 
+            overflow-x: hidden; 
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
+
+        /* ==========================================================================
+           2. TIPOGRAFÍA Y TÍTULOS
+           ========================================================================== */
+        h1, h2, h3, h4 { font-weight: 700; color: var(--color-texto-oscuro); margin-bottom: 20px; }
+        h1 { font-size: clamp(32px, 5vw, 48px); text-align: center; margin-bottom: 40px;}
+        h2 { font-size: 22px; margin-top: 35px; color: var(--color-verde-oscuro); border-bottom: 1px solid var(--color-verde); padding-bottom: 8px; display: inline-block; }
+        p { font-size: 16px; line-height: 1.7; color: var(--color-texto-suave); margin-bottom: 15px; }
+
+        /* ==========================================================================
+           3. BOTONES Y BARRA SUPERIOR
+           ========================================================================== */
+        .btn-header, .btn-whatsapp-flotante {
+            display: inline-flex; align-items: center; justify-content: center;
+            border-radius: var(--radio-bordes); text-decoration: none; 
+            font-weight: 600; transition: all 0.3s ease; border: none; cursor: pointer;
+        }
+        .btn-header { background-color: var(--color-verde-musgo); color: var(--color-blanco-roto); padding: 10px 24px; font-size: 16px; }
+        .btn-header:hover { background-color: var(--color-verde-oscuro); transform: translateY(-2px); }
+
+        .btn-whatsapp-flotante {
+            position: fixed; bottom: 25px; right: 25px; background: #25D366; color: white; 
+            width: 60px; height: 60px; border-radius: 50%; font-size: 30px; 
+            box-shadow: var(--sombra-hover); z-index: 999;
+        }
+        .btn-whatsapp-flotante:hover { transform: scale(1.1); }
+
+        .top-bar {
+            background-color: var(--color-verde-oscuro); color: var(--color-blanco-roto);
+            padding: 10px 50px; position: fixed; width: 100%; top: 0; z-index: 1001; font-size: 14px;
+        }
+        .container-top { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .info-contacto-top { display: flex; gap: 25px; }
+        
+        .selector-idioma { display: flex; align-items: center; gap: 20px; }
+        .lang-switcher {
+            display: flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.1);
+            padding: 4px 12px; border-radius: 20px;
+        }
+        .lang-link {
+            text-decoration: none; color: white; font-weight: 600; display: flex; align-items: center; 
+            gap: 5px; font-size: 13px; transition: all 0.3s ease; opacity: 0.7;
+        }
+        .lang-link.active { opacity: 1; color: #A5D6A7; }
+        .lang-link img { width: 18px; height: auto; border-radius: 2px; }
+
+        .encabezado {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 50px; background-color: rgba(236, 241, 237, 0.95); 
+            backdrop-filter: blur(8px); box-shadow: var(--sombra-suave); 
+            position: fixed; width: 100%; top: 40px; z-index: 1000;
+        }
+        .logo a { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; /* Espacio entre el logo y el texto */
+    font-size: 26px; 
+    font-weight: 800; 
+    color: var(--color-verde-oscuro); 
+    text-decoration: none; 
+}
+
+.logo-img {
+    height: 45px; /* Puedes ajustar este valor si lo quieres más grande o más pequeño */
+    width: auto;
+    object-fit: contain;
+}
+
+/* En móviles hacemos el texto un poco más pequeño para que quepa bien con el logo */
+@media (max-width: 768px) {
+    .logo a { font-size: 20px; gap: 8px; }
+    .logo-img { height: 35px; }
+}
+        .navegacion-principal ul { display: flex; list-style: none; gap: 30px; }
+        .navegacion-principal a { text-decoration: none; color: var(--color-texto-oscuro); font-weight: 600; transition: color 0.3s; }
+        .navegacion-principal a:hover { color: var(--color-verde); }
+        .menu-toggle { display: none; font-size: 26px; color: var(--color-verde-oscuro); cursor: pointer; }
+
+        /* ==========================================================================
+           4. CONTENIDO LEGAL
+           ========================================================================== */
+        .caja-legal {
+            background-color: var(--color-blanco-roto);
+            padding: 50px;
+            border-radius: var(--radio-bordes-pro);
+            box-shadow: var(--sombra-suave);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .tabla-resumen {
+            width: 100%; border-collapse: collapse; margin: 20px 0; background: white; border-radius: 10px; overflow: hidden; font-size: 14px;
+        }
+        .tabla-resumen th, .tabla-resumen td { padding: 15px; border: 1px solid #ddd; text-align: left; }
+        .tabla-resumen th { background: var(--color-verde); color: white; }
+
+        /* ==========================================================================
+           5. FOOTER
+           ========================================================================== */
+        .pie-pagina { background-color: var(--color-cajas); padding: 60px 0 20px; border-top: 2px solid var(--color-fondo-seccion); margin-top: 40px;}
+        .container-footer { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .footer-col h4, .footer-col h5 { color: var(--color-verde-oscuro); margin-bottom: 20px; }
+        .footer-col ul { list-style: none; padding: 0; }
+        .footer-col ul li a { display: block; margin-bottom: 8px; text-decoration: none; color: var(--color-texto-suave); transition: 0.3s; }
+        .footer-col ul li a:hover { color: var(--color-verde); padding-left: 5px; }
+        .copyright { text-align: center; margin-top: 40px; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 25px; font-size: 14px; color: var(--color-texto-suave); }
+
+        /* ==========================================================================
+           6. RESPONSIVE
+           ========================================================================== */
+        @media (max-width: 768px) {
+            body { padding-top: 70px; }
+            .top-bar { display: none; }
+            .encabezado { top: 0; padding: 15px 20px; }
+            .menu-toggle { display: block; }
+            .navegacion-principal { 
+                position: fixed; top: 70px; left: -100%; width: 80%; height: 100%; 
+                background: white; transition: 0.3s; padding: 40px; box-shadow: 10px 0 20px rgba(0,0,0,0.1);
+            }
+            .navegacion-principal.activo { left: 0; }
+            .navegacion-principal ul { flex-direction: column; }
+            .caja-legal { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container-top">
+            <div class="info-contacto-top">
+                <span><i class="fas fa-phone-alt"></i> +34 611 275 011</span>
+                <span><i class="fas fa-envelope"></i> mantenimientosnl@gmail.com</span>
+            </div>
+            <div class="selector-idioma">
+                <span class="location-top"><i class="fas fa-map-marker-alt"></i> Marbella</span>
+                <div class="lang-switcher">
+                    <a href="politica-privacidad.html" class="lang-link active">
+                        <img src="https://flagcdn.com/w20/es.png" alt="Español"> ES
+                    </a>
+                    <span class="separator">|</span>
+                    <a href="privacy-policy_en.html" class="lang-link">
+                        <img src="https://flagcdn.com/w20/gb.png" alt="English"> EN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="encabezado">
+        <div class="logo">
+    <a href="index.html">
+        <img src="LOGOTIPO.png" alt="Logo Mantenimientos NL" class="logo-img">
+        Mantenimientos NL
+    </a>
+</div>
+        <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+        <nav class="navegacion-principal" id="navegacion-principal">
+            <ul>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="index.html#contacto" class="btn-header">Presupuesto Gratis</a>
+    </header>
+
+    <main class="container" style="padding-top: 40px;">
+        <h1 data-aos="fade-down">Política de Privacidad</h1>
+        
+        <div class="caja-legal" data-aos="fade-up">
+            <p>En <strong>Mantenimientos NL</strong> nos tomamos muy en serio la protección de sus datos personales. Esta política detalla cómo recogemos, usamos y protegemos su información de acuerdo con el Reglamento General de Protección de Datos (RGPD).</p>
+
+            <table class="tabla-resumen">
+                <tr>
+                    <th>Responsable</th>
+                    <td>Mantenimientos NL ([Néstor Ramón Lezcano Velázquez/ Y-4941651-T])</td>
+                </tr>
+                <tr>
+                    <th>Finalidad</th>
+                    <td>Atender consultas, enviar presupuestos y gestionar servicios contratados.</td>
+                </tr>
+                <tr>
+                    <th>Legitimación</th>
+                    <td>Consentimiento del usuario y ejecución de contrato de servicios.</td>
+                </tr>
+                <tr>
+                    <th>Destinatarios</th>
+                    <td>No se ceden datos a terceros, salvo obligación legal.</td>
+                </tr>
+                <tr>
+                    <th>Derechos</th>
+                    <td>Acceso, rectificación, supresión y otros derechos detallados abajo.</td>
+                </tr>
+            </table>
+
+            <h2>1. ¿Quién es el Responsable del tratamiento de sus datos?</h2>
+            <p>El titular de esta web y responsable del tratamiento de los datos es Mantenimientos NL, con domicilio en [Su dirección en Marbella] y correo electrónico de contacto mantenimientosnl@gmail.com.</p>
+
+            <h2>2. ¿Con qué finalidad tratamos sus datos personales?</h2>
+            <p>En Mantenimientos NL tratamos la información que nos facilitan las personas interesadas con el fin de:</p>
+            <ul style="margin-left: 20px; margin-bottom: 15px; color: var(--color-texto-suave); line-height: 1.7;">
+                <li>Gestionar y enviar los presupuestos de jardinería o mantenimiento solicitados.</li>
+                <li>Prestar los servicios de mantenimiento contratados (limpieza de piscinas, poda, riego, etc.).</li>
+                <li>Resolver dudas o consultas planteadas a través de nuestro formulario o WhatsApp.</li>
+            </ul>
+
+            <h2>3. ¿Por cuánto tiempo conservaremos sus datos?</h2>
+            <p>Los datos personales proporcionados se conservarán mientras se mantenga la relación comercial o durante los años necesarios para cumplir con las obligaciones legales (por ejemplo, facturación).</p>
+
+            <h2>4. ¿Cuál es la legitimación para el tratamiento de sus datos?</h2>
+            <p>La base legal para el tratamiento de sus datos es el <strong>consentimiento</strong> que nos otorga al enviarnos un mensaje o solicitud de presupuesto, y la propia <strong>ejecución del contrato</strong> en caso de contratar nuestros servicios.</p>
+
+            <h2>5. ¿A qué destinatarios se comunicarán sus datos?</h2>
+            <p>Sus datos no serán comunicados a ninguna tercera empresa u organización, salvo que exista una obligación legal para ello.</p>
+
+            <h2>6. ¿Cuáles son sus derechos cuando nos facilita sus datos?</h2>
+            <p>Cualquier persona tiene derecho a obtener confirmación sobre si en Mantenimientos NL estamos tratando datos personales que les conciernan, o no. Las personas interesadas tienen derecho a:</p>
+            <ul style="margin-left: 20px; margin-bottom: 15px; color: var(--color-texto-suave); line-height: 1.7;">
+                <li>Acceder a sus datos personales.</li>
+                <li>Solicitar la rectificación de los datos inexactos.</li>
+                <li>Solicitar su supresión cuando, entre otros motivos, los datos ya no sean necesarios para los fines que fueron recogidos.</li>
+                <li>Solicitar la limitación de su tratamiento.</li>
+                <li>Oponerse al tratamiento de sus datos.</li>
+            </ul>
+            <p>Para ejercer estos derechos, puede enviarnos un correo electrónico a <strong>mantenimientosnl@gmail.com</strong> adjuntando una copia de su DNI para verificar su identidad.</p>
+
+            <h2>7. Seguridad de los datos</h2>
+            <p>Mantenimientos NL ha adoptado las medidas técnicas y organizativas necesarias para garantizar la seguridad e integridad de los datos de carácter personal que trata, así como para evitar su pérdida, alteración y/o acceso por parte de terceros no autorizados.</p>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="container-footer">
+            <div class="footer-col">
+                <h4>Mantenimientos NL</h4>
+                <p>Tu socio de confianza en Marbella para el cuidado integral de jardines y piscinas. Trato cercano, esfuerzo y resultados honestos en cada hogar.</p>
+            </div>
+
+            <div class="footer-col">
+                <h5>Navegación</h5>
+                <ul>
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Legal</h5>
+                <ul>
+                    <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                    <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Nuestros Servicios</h5>
+                <p class="footer-especialidades">
+                    <strong>Jardineros en Marbella</strong>, especialistas en <strong>Poda de Altura</strong>, expertos en <strong>Sistemas de Riego Automático</strong>, Mantenimiento de comunidades y cuidado de piscinas.
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2026 Mantenimientos NL. Marbella, Málaga. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/34611275011" class="btn-whatsapp-flotante" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const navegacion = document.getElementById('navegacion-principal');
+        menuToggle.addEventListener('click', () => {
+            navegacion.classList.toggle('activo');
+        });
+    </script>
+</body>
+</html>

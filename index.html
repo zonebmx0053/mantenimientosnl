@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mantenimientos NL | Jardinería y Piscinas en Marbella | Poda y Riego</title>
+    <meta name="description" content="Expertos en jardinería profesional en Marbella. Mantenimiento de comunidades, villas, poda de palmeras, instalación de riego, desbroces y cuidado de piscinas. +8 años de experiencia.">
+    <meta name="keywords" content="jardineros Marbella, mantenimiento comunidades Marbella, poda de palmeras Marbella, instalacion riego Marbella, desbroces Marbella, cuidado piscinas Marbella, mantenimiento villas Marbella, trasplantes plantas">
+    <meta name="author" content="Mantenimientos NL">
+    
+    <meta property="og:title" content="Mantenimientos NL | Jardinería Profesional en Marbella">
+    <meta property="og:description" content="Servicio integral de exteriores: jardines, piscinas y sistemas de riego.">
+    <meta property="og:image" content="https://www.benarrochrealestate.com/cms/wp-content/uploads/2023/10/jardines-1536x864.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /* ==========================================================================
+           1. VARIABLES Y CONFIGURACIÓN BASE
+           ========================================================================== */
+        :root {
+            --color-fondo-verde: #DDE5DF; 
+            --color-fondo-seccion: #C8D6CE; 
+            --color-cajas: #ECF1ED; 
+            --color-verde: #2E7D32; 
+            --color-verde-oscuro: #1B5E20; 
+            --color-verde-musgo: #4A634E; 
+            --color-texto-oscuro: #1A2F20; 
+            --color-texto-suave: #4A5D4E; 
+            --color-blanco-roto: #F5F8F6; 
+            
+            --radio-bordes: 16px;      
+            --radio-bordes-pro: 24px;  
+            --sombra-suave: 0 5px 20px rgba(27, 94, 32, 0.08); 
+            --sombra-hover: 0 15px 35px rgba(27, 94, 32, 0.15);
+        }
+
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Segoe UI', system-ui, sans-serif; 
+            scroll-behavior: smooth; 
+        }
+
+        body { 
+            background-color: var(--color-fondo-verde); 
+            background-image: linear-gradient(180deg, var(--color-fondo-verde) 0%, var(--color-fondo-seccion) 100%);
+            color: var(--color-texto-oscuro); 
+            padding-top: 120px; 
+            overflow-x: hidden; 
+        }
+
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 60px 20px; 
+        }
+
+        /* ==========================================================================
+           2. TIPOGRAFÍA Y TÍTULOS
+           ========================================================================== */
+        h1, h2, h3, h4, h5 { 
+            font-weight: 700; 
+            color: var(--color-texto-oscuro); 
+            margin-bottom: 20px; 
+        }
+        h2 { 
+            font-size: clamp(28px, 5vw, 36px); 
+            text-align: center; 
+        }
+        p { 
+            font-size: 16px; 
+            line-height: 1.7; 
+            color: var(--color-texto-suave); 
+            margin-bottom: 15px; 
+        }
+
+        .subtitulo-seccion { 
+            display: block; 
+            text-align: center; 
+            color: var(--color-verde); 
+            font-weight: 600; 
+            text-transform: uppercase; 
+            letter-spacing: 1.5px; 
+            margin-bottom: 10px; 
+            font-size: 14px; 
+        }
+
+        /* ==========================================================================
+           3. BOTONES
+           ========================================================================== */
+        .btn-principal, .btn-secundario, .btn-header, .btn-whatsapp-hero, .btn-banner {
+            display: inline-flex; 
+            align-items: center;
+            justify-content: center;
+            padding: 14px 30px; 
+            border-radius: var(--radio-bordes); 
+            text-decoration: none; 
+            font-weight: 600; 
+            font-size: 16px; 
+            transition: all 0.3s ease; 
+            border: none; 
+            cursor: pointer;
+        }
+
+        .btn-principal { 
+            background-color: var(--color-verde); 
+            color: var(--color-blanco-roto); 
+        }
+        .btn-principal:hover { 
+            background-color: var(--color-verde-oscuro); 
+            transform: translateY(-3px); 
+            box-shadow: var(--sombra-suave); 
+            color: #fff;
+        }
+
+        .btn-secundario { 
+            background-color: transparent; 
+            border: 2px solid var(--color-verde-oscuro); 
+            color: var(--color-verde-oscuro); 
+        }
+        .btn-secundario:hover { 
+            background-color: var(--color-verde-oscuro); 
+            color: var(--color-blanco-roto); 
+            transform: translateY(-3px); 
+        }
+
+        .btn-header { 
+            background-color: var(--color-verde-musgo); 
+            color: var(--color-blanco-roto); 
+            padding: 10px 24px; 
+        }
+        .btn-header:hover {
+            background-color: var(--color-verde-oscuro);
+        }
+
+        .btn-whatsapp-hero {
+            background-color: #25D366;
+            color: white;
+        }
+        .btn-whatsapp-hero:hover {
+            background-color: #20b858;
+            transform: translateY(-3px);
+            box-shadow: var(--sombra-suave);
+        }
+
+        .btn-banner {
+            background-color: white; 
+            color: var(--color-verde-oscuro); 
+            padding: 18px 40px; 
+            font-size: 18px; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .btn-banner:hover {
+            transform: translateY(-3px);
+            background-color: var(--color-fondo-verde);
+        }
+
+        /* ==========================================================================
+           4. TOP BAR & IDIOMAS
+           ========================================================================== */
+        .top-bar {
+            background-color: var(--color-verde-oscuro); 
+            color: var(--color-blanco-roto);
+            padding: 10px 50px; 
+            position: fixed; 
+            width: 100%; 
+            top: 0; 
+            z-index: 1001; 
+            font-size: 14px;
+        }
+        .container-top { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+        .info-contacto-top { display: flex; gap: 25px; }
+        
+        .selector-idioma { display: flex; align-items: center; gap: 20px; }
+        .location-top { margin-right: 10px; opacity: 0.9; }
+        .lang-switcher {
+            display: flex; align-items: center; gap: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 4px 12px; border-radius: 20px;
+        }
+        .lang-link {
+            text-decoration: none; color: white; font-weight: 600;
+            display: flex; align-items: center; gap: 5px; font-size: 13px;
+            transition: all 0.3s ease; opacity: 0.7;
+        }
+        .lang-link:hover, .lang-link.active { opacity: 1; color: #A5D6A7; }
+        .lang-link img { width: 18px; height: auto; border-radius: 2px; display: block; }
+        .separator { color: rgba(255, 255, 255, 0.3); font-size: 12px; }
+
+        /* ==========================================================================
+           5. HEADER (ENCABEZADO)
+           ========================================================================== */
+        .encabezado {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 50px; background-color: rgba(236, 241, 237, 0.95); 
+            backdrop-filter: blur(8px); box-shadow: var(--sombra-suave); 
+            position: fixed; width: 100%; top: 40px; z-index: 1000;
+        }
+        .logo a { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; /* Espacio entre el logo y el texto */
+    font-size: 26px; 
+    font-weight: 800; 
+    color: var(--color-verde-oscuro); 
+    text-decoration: none; 
+}
+
+.logo-img {
+    height: 45px; /* Puedes ajustar este valor si lo quieres más grande o más pequeño */
+    width: auto;
+    object-fit: contain;
+}
+
+/* En móviles hacemos el texto un poco más pequeño para que quepa bien con el logo */
+@media (max-width: 768px) {
+    .logo a { font-size: 20px; gap: 8px; }
+    .logo-img { height: 35px; }
+}
+        .navegacion-principal ul { display: flex; list-style: none; gap: 30px; }
+        .navegacion-principal a { text-decoration: none; color: var(--color-texto-oscuro); font-weight: 600; transition: color 0.3s; }
+        .navegacion-principal a:hover { color: var(--color-verde); }
+        .menu-toggle { display: none; font-size: 26px; color: var(--color-verde-oscuro); cursor: pointer; }
+
+        /* ==========================================================================
+           6. HERO SECTION
+           ========================================================================== */
+        .hero {
+            min-height: 85vh; 
+            background-image: linear-gradient(rgba(27, 94, 32, 0.6), rgba(27, 94, 32, 0.7)), url('https://www.benarrochrealestate.com/cms/wp-content/uploads/2023/10/jardines-1536x864.jpg?v=1696499550'); 
+            background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; padding: 40px 20px;
+        }
+        .hero .subtitulo-seccion { color: #A5D6A7; }
+        .hero h1 { font-size: clamp(32px, 8vw, 60px); color: var(--color-blanco-roto); margin-bottom: 25px; line-height: 1.1; }
+        .hero p { font-size: 20px; color: rgba(245, 248, 246, 0.9); margin-bottom: 40px; max-width: 800px; margin-inline: auto; }
+        .hero-btns { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+
+        /* ==========================================================================
+           7. SECCIÓN CONTADORES (EXPERIENCIA)
+           ========================================================================== */
+        .stats-section { background-color: var(--color-verde-oscuro); color: white; padding: 60px 20px; }
+        .stats-grid { 
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 40px; max-width: 1200px; margin: 0 auto; text-align: center;
+        }
+        .stat-item i { font-size: 40px; color: #A5D6A7; margin-bottom: 15px; }
+        .stat-number { display: block; font-size: 48px; font-weight: 800; margin-bottom: 5px; }
+        .stat-text { font-size: 16px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; opacity: 0.9; }
+
+        /* ==========================================================================
+           8. SERVICIOS (TARJETAS)
+           ========================================================================== */
+        .tarjetas-servicios { 
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+            gap: 25px; margin-top: 40px;
+        }
+        .tarjeta-pro { 
+            background: var(--color-cajas); border-radius: var(--radio-bordes-pro); 
+            box-shadow: var(--sombra-suave); overflow: hidden; transition: all 0.3s ease; 
+            height: 100%; border: 1px solid rgba(46, 125, 50, 0.1); display: flex; flex-direction: column;
+        }
+        .tarjeta-pro:hover { transform: translateY(-10px); box-shadow: var(--sombra-hover); }
+        .imagen-tarjeta { position: relative; height: 200px; width: 100%; }
+        .imagen-tarjeta img { width: 100%; height: 100%; object-fit: cover; }
+        .icono-flotante { 
+            position: absolute; bottom: -20px; right: 20px; width: 50px; height: 50px; 
+            background: var(--color-verde); border-radius: 50%; display: flex; 
+            align-items: center; justify-content: center; color: white; font-size: 20px; 
+            box-shadow: var(--sombra-suave); border: 3px solid var(--color-cajas);
+        }
+        .cuerpo-tarjeta { padding: 35px 25px 25px; flex-grow: 1; }
+        .cuerpo-tarjeta h3 { font-size: 20px; margin-bottom: 10px; }
+        .cuerpo-tarjeta ul { list-style: none; padding: 0; }
+        .cuerpo-tarjeta li { font-size: 14px; color: var(--color-texto-suave); margin-bottom: 5px; display: flex; align-items: center; gap: 8px; }
+        .cuerpo-tarjeta li::before { content: '✔'; color: var(--color-verde); font-weight: bold; }
+
+        /* ==========================================================================
+           9. GALERÍA Y BANNER
+           ========================================================================== */
+        .grid-galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 30px; margin-bottom: 40px; }
+        .visor-antes-despues { position: relative; overflow: hidden; border-radius: var(--radio-bordes-pro); aspect-ratio: 16/9; box-shadow: var(--sombra-suave); }
+        .imagen-antes, .imagen-despues { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .visor-antes-despues img { width: 100%; height: 100%; object-fit: cover; }
+        .imagen-antes { clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%); }
+        .slider { position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; z-index: 30; }
+        .slider-button { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40px; height: 40px; background: white; border-radius: 50%; z-index: 20; pointer-events: none; border: 3px solid var(--color-verde); display: flex; align-items: center; justify-content: center; }
+        .slider-button::before { content: ''; position: absolute; height: 1000px; width: 4px; background: white; z-index: -1; }
+
+        .banner-galeria-pro {
+            position: relative; 
+            margin-top: 60px; 
+            height: 350px; 
+            border-radius: var(--radio-bordes-pro); 
+            overflow: hidden; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            background-image: linear-gradient(rgba(27, 94, 32, 0.7), rgba(27, 94, 32, 0.7)), url('https://images.unsplash.com/photo-1584622781564-1d9876a13d00?q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .banner-galeria-contenido {
+            text-align: center; 
+            color: white; 
+            padding: 20px; 
+            z-index: 2;
+        }
+        .banner-galeria-contenido h3 {
+            color: white; 
+            font-size: 32px; 
+            margin-bottom: 15px; 
+        }
+        .banner-galeria-contenido p {
+            color: rgba(255,255,255,0.9); 
+            font-size: 18px; 
+            max-width: 600px; 
+            margin: 0 auto 30px;
+        }
+
+        /* ==========================================================================
+           10. CONTACTO Y FORMULARIO
+           ========================================================================== */
+        .grid-contacto { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; background: var(--color-cajas); border-radius: var(--radio-bordes-pro); overflow: hidden; box-shadow: var(--sombra-suave); }
+        .contacto-info-caja { background: var(--color-fondo-seccion); padding: 50px; }
+        .contacto-info-caja div { margin-top: 30px; }
+        .formulario-caja { padding: 50px; }
+        .campo { margin-bottom: 15px; }
+        .campo label { display: block; font-weight: 600; margin-bottom: 5px; font-size: 14px; }
+        .campo input, .campo textarea, .campo select { width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ccc; font-family: inherit; }
+
+        /* WHATSAPP FLOTANTE */
+        .btn-whatsapp-flotante { position: fixed; bottom: 25px; right: 25px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: var(--sombra-hover); z-index: 999; text-decoration: none; transition: transform 0.3s; }
+        .btn-whatsapp-flotante:hover { transform: scale(1.1); }
+
+        /* ==========================================================================
+           11. FOOTER (PIE DE PÁGINA)
+           ========================================================================== */
+        .pie-pagina { background-color: var(--color-cajas); padding: 60px 0 20px; border-top: 2px solid var(--color-fondo-seccion); }
+        .container-footer { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .footer-social { margin-top: 15px; font-size: 20px; display: flex; gap: 15px; }
+        .footer-col ul { list-style: none; padding: 0; }
+        .footer-col ul li a { display: block; margin-bottom: 8px; text-decoration: none; color: var(--color-texto-suave); transition: 0.3s; }
+        .footer-col ul li a:hover { color: var(--color-verde); padding-left: 5px; }
+        .footer-especialidades { font-size: 13px; line-height: 1.6; opacity: 0.8; color: var(--color-texto-suave); }
+        .copyright { text-align: center; margin-top: 40px; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 25px; font-size: 14px; color: var(--color-texto-suave); }
+
+        /* ==========================================================================
+           12. RESPONSIVE Y MÓVIL
+           ========================================================================== */
+        @media (max-width: 768px) {
+            body { padding-top: 70px; }
+            .top-bar { display: none; }
+            .encabezado { top: 0; padding: 15px 20px; }
+            .menu-toggle { display: block; }
+            .navegacion-principal { 
+                position: fixed; top: 70px; left: -100%; width: 80%; height: 100%; 
+                background: white; transition: 0.3s; padding: 40px; box-shadow: 10px 0 20px rgba(0,0,0,0.1);
+            }
+            .navegacion-principal.activo { left: 0; }
+            .navegacion-principal ul { flex-direction: column; }
+            .grid-galeria { grid-template-columns: 1fr; }
+            .grid-contacto { grid-template-columns: 1fr; }
+            .contacto-info-caja, .formulario-caja { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container-top">
+            <div class="info-contacto-top">
+                <span><i class="fas fa-phone-alt"></i> +34 611 275 011</span>
+                <span><i class="fas fa-envelope"></i> mantenimientosnl@gmail.com</span>
+            </div>
+            <div class="selector-idioma">
+                <span class="location-top"><i class="fas fa-map-marker-alt"></i> Marbella</span>
+                <div class="lang-switcher">
+                    <a href="index.html" class="lang-link active">
+                        <img src="https://flagcdn.com/w20/es.png" alt="Español"> ES
+                    </a>
+                    <span class="separator">|</span>
+                    <a href="home.html" class="lang-link">
+                        <img src="https://flagcdn.com/w20/gb.png" alt="English"> EN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="encabezado">
+        <div class="logo">
+    <a href="index.html">
+        <img src="LOGOTIPO.png" alt="Logo Mantenimientos NL" class="logo-img">
+        Mantenimientos NL
+    </a>
+</div>
+        <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+        <nav class="navegacion-principal" id="navegacion-principal">
+            <ul>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="index.html#contacto" class="btn-header">Presupuesto Gratis</a>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content" data-aos="zoom-out">
+                <span class="subtitulo-seccion">Servicios de Jardinería Profesional</span>
+                <h1>Tu Jardín y Piscina en manos expertas en Marbella</h1>
+                <p>Especialistas en el mantenimiento de villas, comunidades y casas particulares. Soluciones integrales de poda, riego y cuidado exterior.</p>
+                <div class="hero-btns">
+                    <a href="#servicios" class="btn-principal">Ver Servicios</a>
+                    <a href="https://wa.me/34611275011" class="btn-whatsapp-hero">WhatsApp Directo</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span class="stat-number" data-target="1000">0</span>
+                    <span class="stat-text">Trabajos Realizados</span>
+                </div>
+
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-text">Clientes Satisfechos</span>
+                </div>
+
+                <div class="stat-item">
+                    <i class="fas fa-house-chimney"></i>
+                    <span class="stat-number" data-target="40">0</span>
+                    <span class="stat-text">Villas Cuidadas</span>
+                </div>
+
+                <div class="stat-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span class="stat-number" data-target="8">0</span>
+                    <span class="stat-text">Años de Experiencia</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="container">
+            <span class="subtitulo-seccion">Nuestra Especialidad</span>
+            <h2>Servicios Integrales de Jardinería</h2>
+            
+            <div class="tarjetas-servicios">
+                <article class="tarjeta-pro" data-aos="fade-up">
+                    <div class="imagen-tarjeta">
+                        <img src="https://www.jardinesdvc.es/wp-content/uploads/2018/05/mantenimiento-de-jardines-de-comunidades.jpg" alt="Mantenimiento comunidades">
+                        <div class="icono-flotante"><i class="fas fa-city"></i></div>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <h3>Comunidades y Villas</h3>
+                        <p>Mantenimiento programado para grandes urbanizaciones y villas en Marbella.</p>
+                        <ul>
+                            <li>Limpieza de zonas comunes</li>
+                            <li>Corte de césped profesional</li>
+                            <li>Control de plagas preventivo</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="tarjeta-pro" data-aos="fade-up" data-aos-delay="100">
+                    <div class="imagen-tarjeta">
+                        <img src="https://storage.googleapis.com/d_images/ProductImage/10169/886/ProductImage/10169/544/1645427822787.webp" alt="Poda de palmeras">
+                        <div class="icono-flotante"><i class="fas fa-tree"></i></div>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <h3>Podas y Palmeras</h3>
+                        <p>Especialistas en poda de altura y cuidado de palmáceas (limpieza de balonas).</p>
+                        <ul>
+                            <li>Poda de formación y limpieza</li>
+                            <li>Tratamiento contra el Picudo Rojo</li>
+                            <li>Cirugía arbórea técnica</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="tarjeta-pro" data-aos="fade-up" data-aos-delay="200">
+                    <div class="imagen-tarjeta">
+                        <img src="https://static.bainet.es/clip/c1c0e2a4-9a85-4a11-bcb1-5e1cf2c6ad6c_source-aspect-ratio_1600w_0.jpg" alt="Sistemas de riego">
+                        <div class="icono-flotante"><i class="fas fa-faucet-drip"></i></div>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <h3>Riego y Trasplantes</h3>
+                        <p>Optimización del agua y diseño de zonas verdes con especies adecuadas.</p>
+                        <ul>
+                            <li>Instalación de riego automático</li>
+                            <li>Trasplantes de grandes ejemplares</li>
+                            <li>Reparación de fugas y aspersores</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="tarjeta-pro" data-aos="fade-up">
+                    <div class="imagen-tarjeta">
+                        <img src="https://www.jardineromadrid.es/wp-content/uploads/2023/02/servicio-de-desbroce-parcelas.jpg" alt="Desbroces">
+                        <div class="icono-flotante"><i class="fas fa-broom"></i></div>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <h3>Desbroces y Parcelas</h3>
+                        <p>Limpieza de terrenos y parcelas para cumplimiento de normativa de incendios.</p>
+                        <ul>
+                            <li>Desbroce de maleza y rastrojos</li>
+                            <li>Retirada de restos vegetales</li>
+                            <li>Limpieza de solares y perímetros</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="tarjeta-pro" data-aos="fade-up" data-aos-delay="100">
+                    <div class="imagen-tarjeta">
+                        <img src="https://divapiscinas.es/wp-content/uploads/2020/11/jardines-con-piscina-paisajismo.jpg" alt="Mantenimiento piscinas">
+                        <div class="icono-flotante"><i class="fas fa-swimming-pool"></i></div>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <h3>Piscinas y Agua</h3>
+                        <p>Mantenimiento técnico de piscinas para que el agua esté siempre perfecta.</p>
+                        <ul>
+                            <li>Análisis de pH y Cloro</li>
+                            <li>Limpieza de fondo y paredes</li>
+                            <li>Revisión de bombas y filtros</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="tarjeta-pro" data-aos="fade-up" data-aos-delay="200">
+                    <div class="imagen-tarjeta">
+                        <img src="https://www.jardineriaaguayjardin.es/wp-content/uploads/2022/05/jardin-con-olivo-evolucion.jpg" alt="Diseño de jardines y paisajismo">
+                        <div class="icono-flotante"><i class="fas fa-pen-ruler"></i></div>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <h3>Diseño y Paisajismo</h3>
+                        <p>Transformamos tu espacio exterior en un entorno personalizado y funcional.</p>
+                        <ul>
+                            <li>Proyectos de paisajismo a medida</li>
+                            <li>Selección de plantas mediterráneas</li>
+                            <li>Creación de rocallas y senderos</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="galeria" class="container">
+            <span class="subtitulo-seccion">El resultado de nuestro trabajo</span>
+            <h2>Resultados Reales</h2>
+            
+            <div class="grid-galeria">
+                <div class="visor-antes-despues" data-aos="zoom-in">
+                    <div class="imagen-despues">
+                        <img src="https://media.revistaad.es/photos/617699dcaeb94473c45d04ff/master/w_1600,c_limit/8_Fernando%20Wong%20Seaspray%2004.jpg" alt="Después">
+                    </div>
+                    <div class="imagen-antes">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/01/bf/5b/a3/jardin-descuidado-y-feo.jpg" alt="Antes">
+                    </div>
+                    <input type="range" min="0" max="100" value="50" class="slider">
+                    <div class="slider-button"></div>
+                </div>
+
+                <div class="visor-antes-despues" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="imagen-despues">
+                        <img src="https://cubriland.com/wp-content/uploads/2024/07/como-mantener-piscina-fresca-y-limpia.jpg" alt="Después">
+                    </div>
+                    <div class="imagen-antes">
+                        <img src="https://www.outlet-piscinas.com/blog/wp-content/uploads/2018/11/algas-piscina.png" alt="Antes">
+                    </div>
+                    <input type="range" min="0" max="100" value="50" class="slider">
+                    <div class="slider-button"></div>
+                </div>
+            </div>
+
+            <div class="banner-galeria-pro" data-aos="fade-up">
+                <div class="banner-galeria-contenido">
+                    <h3>Descubre nuestros proyectos realizados</h3>
+                    <p>Más de 1.000 transformaciones que avalan nuestra dedicación y esfuerzo diario en la jardinería y mantenimiento.</p>
+                    <a href="galeria.html" class="btn-banner">
+                        Ver galería completa <i class="fas fa-chevron-right" style="margin-left: 10px;"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="container">
+            <div class="grid-contacto" data-aos="fade-up">
+                <div class="contacto-info-caja">
+                    <h2>Presupuesto Gratis</h2>
+                    <p>Contacta con nosotros hoy mismo y pide tu presupuesto sin compromiso. Te responderemos con total franqueza para ver cómo podemos ayudarte.</p>
+                    <div>
+                        <p><i class="fas fa-phone-alt"></i> +34 600 123 456</p>
+                        <p><i class="fas fa-envelope"></i> info@mantenimientosnl.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Marbella, Málaga</p>
+                    </div>
+                </div>
+                <div class="formulario-caja">
+                    <form action="#">
+                        <div class="campo"><label>Nombre Completo</label><input type="text" required></div>
+                        <div class="campo"><label>Teléfono</label><input type="tel" required></div>
+                        <div class="campo">
+                            <label>¿Qué servicio necesitas?</label>
+                            <select>
+                                <option>Mantenimiento de Jardín</option>
+                                <option>Poda de Palmeras / Altura</option>
+                                <option>Instalación de Riego</option>
+                                <option>Mantenimiento de Piscina</option>
+                                <option>Desbroce de Parcela</option>
+                            </select>
+                        </div>
+                        <div class="campo"><label>Mensaje</label><textarea rows="4"></textarea></div>
+                        <button type="submit" class="btn-principal" style="width: 100%;">Enviar Solicitud</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="container-footer">
+            <div class="footer-col">
+                <h4>Mantenimientos NL</h4>
+                <p>Tu socio de confianza en Marbella para el cuidado integral de jardines y piscinas. Trato cercano, esfuerzo y resultados honestos en cada hogar.</p>
+            </div>
+
+            <div class="footer-col">
+                <h5>Navegación</h5>
+                <ul>
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Legal</h5>
+                <ul>
+                    <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                    <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Nuestros Servicios</h5>
+                <p class="footer-especialidades">
+                    <strong>Jardineros en Marbella</strong>, especialistas en <strong>Poda de Altura</strong>, expertos en <strong>Sistemas de Riego Automático</strong>, Mantenimiento de comunidades y cuidado de piscinas.
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2026 Mantenimientos NL. Marbella, Málaga. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/34611275011" class="btn-whatsapp-flotante" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        // MENÚ MÓVIL
+        const menuToggle = document.getElementById('menu-toggle');
+        const navegacion = document.getElementById('navegacion-principal');
+        menuToggle.addEventListener('click', () => {
+            navegacion.classList.toggle('activo');
+        });
+
+        // ANIMACIÓN DE CONTADORES
+        const statsSection = document.getElementById('experiencia');
+        const counters = document.querySelectorAll('.stat-number');
+        let animated = false;
+
+        function animateCounters() {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const increment = target / 50;
+                let current = 0;
+
+                const updateCounter = () => {
+                    if (current < target) {
+                        current += increment;
+                        counter.innerText = Math.ceil(current);
+                        setTimeout(updateCounter, 30);
+                    } else {
+                        counter.innerText = target + "+";
+                    }
+                };
+                updateCounter();
+            });
+        }
+
+        window.addEventListener('scroll', () => {
+            const sectionPos = statsSection.getBoundingClientRect().top;
+            const screenPos = window.innerHeight;
+            if (sectionPos < screenPos && !animated) {
+                animateCounters();
+                animated = true;
+            }
+        });
+
+        // SLIDER ANTES Y DESPUÉS
+        document.querySelectorAll('.visor-antes-despues').forEach(visor => {
+            const slider = visor.querySelector('.slider');
+            const imagenAntes = visor.querySelector('.imagen-antes');
+            const button = visor.querySelector('.slider-button');
+            slider.addEventListener('input', (e) => {
+                const val = e.target.value;
+                imagenAntes.style.clipPath = `polygon(0 0, ${val}% 0, ${val}% 100%, 0 100%)`;
+                button.style.left = `${val}%`;
+            });
+        });
+    </script>
+</body>
+</html>
