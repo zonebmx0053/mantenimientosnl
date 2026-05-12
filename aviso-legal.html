@@ -3,174 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Aviso Legal | Mantenimientos NL - Marbella</title>
     <meta name="description" content="Aviso legal y condiciones de uso de la página web de Mantenimientos NL, expertos en jardinería y piscinas en Marbella.">
-    <meta name="robots" content="noindex, follow"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="robots" content="noindex, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <style>
-        /* ==========================================================================
-           1. VARIABLES Y CONFIGURACIÓN BASE
-           ========================================================================== */
+        /* ── VARIABLES ──────────────────────────────────────────── */
         :root {
-            --color-fondo-verde: #DDE5DF; 
-            --color-fondo-seccion: #C8D6CE; 
-            --color-cajas: #ECF1ED; 
-            --color-verde: #2E7D32; 
-            --color-verde-oscuro: #1B5E20; 
-            --color-verde-musgo: #4A634E; 
-            --color-texto-oscuro: #1A2F20; 
-            --color-texto-suave: #4A5D4E; 
-            --color-blanco-roto: #F5F8F6; 
-            
-            --radio-bordes: 16px;      
-            --radio-bordes-pro: 24px;  
-            --sombra-suave: 0 5px 20px rgba(27, 94, 32, 0.08); 
-            --sombra-hover: 0 15px 35px rgba(27, 94, 32, 0.15);
+            --verde:        #2E7D32;
+            --verde-oscuro: #1B5E20;
+            --verde-mint:   #E8F5E9;
+            --fondo:        #EEF4EF;
+            --texto-oscuro: #162A1C;
+            --texto-medio:  #2D5035;
+            --texto-suave:  #5A7260;
+            --sombra-card:  0 2px 10px rgba(0,0,0,0.05), 0 6px 22px rgba(27,94,32,0.08);
+            --trans: all 0.3s cubic-bezier(0.4,0,0.2,1);
+        }
+        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--fondo);
+            color: var(--texto-oscuro);
+            padding-top: 116px;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; font-weight: 700; color: var(--texto-oscuro); line-height: 1.2; margin-bottom: 12px; }
+        p { font-size: 14px; line-height: 1.8; color: var(--texto-suave); margin-bottom: 14px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 64px 24px; }
+
+        .subtitulo-seccion {
+            display: inline-block; color: var(--verde);
+            font-family: 'Poppins', sans-serif; font-weight: 600;
+            font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px;
+            background: var(--verde-mint); padding: 6px 18px; border-radius: 20px;
+            margin-bottom: 14px; border: 1px solid rgba(46,125,50,0.15);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; scroll-behavior: smooth; }
-
-        body { 
-            background-color: var(--color-fondo-verde); 
-            background-image: linear-gradient(180deg, var(--color-fondo-verde) 0%, var(--color-fondo-seccion) 100%);
-            color: var(--color-texto-oscuro); 
-            padding-top: 120px; 
-            overflow-x: hidden; 
+        /* ── BOTONES ────────────────────────────────────────────── */
+        .btn-header {
+            display: inline-flex; align-items: center; gap: 8px;
+            border-radius: 50px; text-decoration: none;
+            font-family: 'Poppins', sans-serif; font-weight: 600;
+            transition: var(--trans); border: none; cursor: pointer;
+            background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+            color: white; padding: 10px 22px; font-size: 14px;
+            box-shadow: 0 3px 12px rgba(46,125,50,0.3);
         }
+        .btn-header:hover { box-shadow: 0 6px 20px rgba(46,125,50,0.42); transform: translateY(-2px); color: white; }
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
-
-        /* ==========================================================================
-           2. TIPOGRAFÍA Y TÍTULOS
-           ========================================================================== */
-        h1, h2, h3, h4, h5 { font-weight: 700; color: var(--color-texto-oscuro); margin-bottom: 20px; }
-        h1 { font-size: clamp(32px, 5vw, 48px); text-align: center; margin-bottom: 40px;}
-        h2 { font-size: 24px; margin-top: 40px; border-bottom: 2px solid var(--color-verde); padding-bottom: 10px; display: inline-block;}
-        p { font-size: 16px; line-height: 1.7; color: var(--color-texto-suave); margin-bottom: 15px; }
-        ul.lista-legal { margin-left: 20px; margin-bottom: 15px; color: var(--color-texto-suave); line-height: 1.7; }
-        ul.lista-legal li { margin-bottom: 8px; }
-
-        /* ==========================================================================
-           3. BOTONES
-           ========================================================================== */
-        .btn-header, .btn-whatsapp-flotante {
-            display: inline-flex; align-items: center; justify-content: center;
-            border-radius: var(--radio-bordes); text-decoration: none; 
-            font-weight: 600; transition: all 0.3s ease; border: none; cursor: pointer;
-        }
-
-        .btn-header { background-color: var(--color-verde-musgo); color: var(--color-blanco-roto); padding: 10px 24px; font-size: 16px; }
-        .btn-header:hover { background-color: var(--color-verde-oscuro); transform: translateY(-2px); }
-
-        .btn-whatsapp-flotante {
-            position: fixed; bottom: 25px; right: 25px; background: #25D366; color: white; 
-            width: 60px; height: 60px; border-radius: 50%; font-size: 30px; 
-            box-shadow: var(--sombra-hover); z-index: 999;
-        }
-        .btn-whatsapp-flotante:hover { transform: scale(1.1); }
-
-        /* ==========================================================================
-           4. TOP BAR & IDIOMAS & HEADER
-           ========================================================================== */
+        /* ── TOP BAR ────────────────────────────────────────────── */
         .top-bar {
-            background-color: var(--color-verde-oscuro); color: var(--color-blanco-roto);
-            padding: 10px 50px; position: fixed; width: 100%; top: 0; z-index: 1001; font-size: 14px;
+            background: var(--verde-oscuro); color: rgba(255,255,255,0.88);
+            padding: 9px 24px; position: fixed; width: 100%; top: 0; z-index: 1001; font-size: 13px;
         }
         .container-top { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
-        .info-contacto-top { display: flex; gap: 25px; }
-        
-        .selector-idioma { display: flex; align-items: center; gap: 20px; }
-        .location-top { margin-right: 10px; opacity: 0.9; }
-        .lang-switcher {
-            display: flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.1);
-            padding: 4px 12px; border-radius: 20px;
-        }
-        .lang-link {
-            text-decoration: none; color: white; font-weight: 600; display: flex; align-items: center; 
-            gap: 5px; font-size: 13px; transition: all 0.3s ease; opacity: 0.7;
-        }
+        .info-contacto-top { display: flex; gap: 24px; align-items: center; }
+        .info-contacto-top span { display: flex; align-items: center; gap: 7px; }
+        .info-contacto-top i { color: #81C784; font-size: 12px; }
+        .selector-idioma { display: flex; align-items: center; gap: 18px; }
+        .location-top { display: flex; align-items: center; gap: 6px; font-size: 12px; opacity: 0.75; }
+        .location-top i { color: #81C784; }
+        .lang-switcher { display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 20px; }
+        .lang-link { text-decoration: none; color: white; font-weight: 600; display: flex; align-items: center; gap: 5px; font-size: 12px; opacity: 0.65; transition: var(--trans); }
         .lang-link:hover, .lang-link.active { opacity: 1; color: #A5D6A7; }
-        .lang-link img { width: 18px; height: auto; border-radius: 2px; display: block; }
-        .separator { color: rgba(255, 255, 255, 0.3); font-size: 12px; }
+        .lang-link img { width: 16px; border-radius: 2px; }
+        .separator { color: rgba(255,255,255,0.3); }
 
+        /* ── HEADER ─────────────────────────────────────────────── */
         .encabezado {
             display: flex; justify-content: space-between; align-items: center;
-            padding: 15px 50px; background-color: rgba(236, 241, 237, 0.95); 
-            backdrop-filter: blur(8px); box-shadow: var(--sombra-suave); 
-            position: fixed; width: 100%; top: 40px; z-index: 1000;
+            padding: 13px 40px; background: rgba(255,255,255,0.96);
+            backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+            box-shadow: 0 2px 24px rgba(27,94,32,0.1);
+            position: fixed; width: 100%; top: 38px; z-index: 1000;
         }
-        .logo a { 
-    display: flex; 
-    align-items: center; 
-    gap: 12px; /* Espacio entre el logo y el texto */
-    font-size: 26px; 
-    font-weight: 800; 
-    color: var(--color-verde-oscuro); 
-    text-decoration: none; 
-}
+        .logo a {
+            display: flex; align-items: center; gap: 12px; text-decoration: none;
+            font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 21px;
+            color: var(--verde-oscuro); letter-spacing: -0.3px;
+        }
+        .logo-img { height: 44px; width: auto; object-fit: contain; }
+        .navegacion-principal ul { display: flex; list-style: none; gap: 4px; align-items: center; }
+        .navegacion-principal a {
+            text-decoration: none; color: var(--texto-medio);
+            font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 14px;
+            padding: 8px 14px; border-radius: 8px; transition: var(--trans);
+        }
+        .navegacion-principal a:hover { color: var(--verde); background: var(--verde-mint); }
+        .menu-toggle {
+            display: none; font-size: 22px; color: var(--verde-oscuro); cursor: pointer;
+            padding: 8px 10px; border-radius: 8px; border: none; background: transparent; transition: var(--trans);
+        }
+        .menu-toggle:hover { background: var(--verde-mint); }
+        .nav-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: 998; backdrop-filter: blur(3px); }
+        .nav-overlay.activo { display: block; }
 
-.logo-img {
-    height: 45px; /* Puedes ajustar este valor si lo quieres más grande o más pequeño */
-    width: auto;
-    object-fit: contain;
-}
+        /* ── PAGE HERO ──────────────────────────────────────────── */
+        .page-hero {
+            background: linear-gradient(135deg, #0D3B12 0%, var(--verde-oscuro) 100%);
+            padding: 70px 24px 88px;
+            text-align: center; position: relative; overflow: hidden;
+        }
+        .page-hero::after {
+            content: ''; position: absolute; bottom: -1px; left: 0; right: 0;
+            height: 60px; background: var(--fondo);
+            clip-path: ellipse(56% 100% at 50% 100%); pointer-events: none;
+        }
+        .page-hero::before {
+            content: ''; position: absolute; inset: 0;
+            background: radial-gradient(ellipse at 30% 50%, rgba(255,255,255,0.05) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .page-hero .subtitulo-seccion {
+            background: rgba(255,255,255,0.12);
+            color: #A5D6A7; border: 1px solid rgba(165,214,167,0.3);
+        }
+        .page-hero h1 {
+            color: white; font-size: clamp(28px, 5vw, 46px);
+            margin-bottom: 0; font-weight: 800;
+        }
 
-/* En móviles hacemos el texto un poco más pequeño para que quepa bien con el logo */
-@media (max-width: 768px) {
-    .logo a { font-size: 20px; gap: 8px; }
-    .logo-img { height: 35px; }
-}
-        .navegacion-principal ul { display: flex; list-style: none; gap: 30px; }
-        .navegacion-principal a { text-decoration: none; color: var(--color-texto-oscuro); font-weight: 600; transition: color 0.3s; }
-        .navegacion-principal a:hover { color: var(--color-verde); }
-        .menu-toggle { display: none; font-size: 26px; color: var(--color-verde-oscuro); cursor: pointer; }
-
-        /* ==========================================================================
-           5. CAJA DE CONTENIDO LEGAL
-           ========================================================================== */
+        /* ── CONTENIDO LEGAL ─────────────────────────────────────── */
         .caja-legal {
-            background-color: var(--color-blanco-roto);
-            padding: 50px;
-            border-radius: var(--radio-bordes-pro);
-            box-shadow: var(--sombra-suave);
-            max-width: 900px;
+            background: white;
+            padding: 52px 56px;
+            border-radius: 24px;
+            box-shadow: var(--sombra-card);
+            max-width: 860px;
             margin: 0 auto;
+            border: 1px solid rgba(46,125,50,0.07);
         }
+        .caja-legal > p:first-child { font-size: 15px; color: var(--texto-medio); margin-bottom: 20px; }
 
-        /* ==========================================================================
-           6. FOOTER
-           ========================================================================== */
-        .pie-pagina { background-color: var(--color-cajas); padding: 60px 0 20px; border-top: 1px solid var(--color-fondo-seccion); margin-top: 40px;}
-        .container-footer { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        .footer-social { margin-top: 15px; font-size: 20px; display: flex; gap: 15px; }
+        .caja-legal h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px; font-weight: 700;
+            color: var(--verde-oscuro);
+            margin-top: 36px; margin-bottom: 12px;
+            padding-left: 16px;
+            border-left: 3px solid var(--verde);
+            text-align: left; display: block;
+        }
+        .caja-legal h2:first-of-type { margin-top: 24px; }
+
+        .lista-legal {
+            list-style: none; padding: 0; margin-bottom: 16px;
+        }
+        .lista-legal li {
+            font-size: 14px; color: var(--texto-suave); line-height: 1.75;
+            padding: 9px 0 9px 26px;
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+            position: relative;
+        }
+        .lista-legal li::before {
+            content: '→'; position: absolute; left: 0;
+            color: var(--verde); font-size: 12px; top: 11px;
+        }
+        .lista-legal li:last-child { border-bottom: none; }
+        .lista-legal li strong { color: var(--texto-medio); font-weight: 600; }
+
+        /* ── FOOTER ─────────────────────────────────────────────── */
+        .pie-pagina { background: #0B2410; padding: 70px 0 0; }
+        .container-footer {
+            display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 48px; max-width: 1200px; margin: 0 auto; padding: 0 24px;
+        }
+        .footer-col h4, .footer-col h5 {
+            font-family: 'Poppins', sans-serif; color: white;
+            font-size: 14px; font-weight: 700; margin-bottom: 20px;
+        }
+        .footer-col > p { font-size: 13px; color: rgba(255,255,255,0.48); line-height: 1.75; margin-bottom: 0; }
         .footer-col ul { list-style: none; padding: 0; }
-        .footer-col ul li a { display: block; margin-bottom: 8px; text-decoration: none; color: var(--color-texto-suave); transition: 0.3s; }
-        .footer-col ul li a:hover { color: var(--color-verde); padding-left: 5px; }
-        .footer-especialidades { font-size: 13px; line-height: 1.6; opacity: 0.8; color: var(--color-texto-suave); }
-        .copyright { text-align: center; margin-top: 40px; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 25px; font-size: 14px; color: var(--color-texto-suave); }
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col ul li a {
+            text-decoration: none; color: rgba(255,255,255,0.5);
+            font-size: 13px; transition: var(--trans);
+            display: flex; align-items: center; gap: 8px;
+        }
+        .footer-col ul li a i { width: 16px; color: rgba(255,255,255,0.2); font-size: 11px; }
+        .footer-col ul li a:hover { color: #81C784; padding-left: 4px; }
+        .footer-social { margin-top: 20px; display: flex; gap: 10px; }
+        .footer-social a {
+            width: 38px; height: 38px; background: rgba(255,255,255,0.07);
+            border-radius: 10px; display: flex; align-items: center; justify-content: center;
+            color: rgba(255,255,255,0.5); font-size: 15px; text-decoration: none;
+            transition: var(--trans); border: 1px solid rgba(255,255,255,0.06);
+        }
+        .footer-social a:hover { background: var(--verde); color: white; border-color: transparent; transform: translateY(-3px); }
+        .footer-especialidades { font-size: 13px; line-height: 1.75; color: rgba(255,255,255,0.42); }
+        .footer-especialidades strong { color: rgba(255,255,255,0.68); font-weight: 600; }
+        .footer-divider { max-width: 1200px; margin: 56px auto 0; height: 1px; background: rgba(255,255,255,0.07); }
+        .copyright { text-align: center; padding: 22px 24px; font-size: 12px; color: rgba(255,255,255,0.28); }
 
-        /* ==========================================================================
-           7. RESPONSIVE Y MÓVIL
-           ========================================================================== */
+        /* ── WHATSAPP ───────────────────────────────────────────── */
+        .btn-whatsapp-flotante {
+            position: fixed; bottom: 28px; right: 28px;
+            background: linear-gradient(135deg, #25D366, #1DA851);
+            color: white; width: 58px; height: 58px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 28px; box-shadow: 0 6px 24px rgba(37,211,102,0.42);
+            z-index: 999; text-decoration: none; transition: var(--trans);
+        }
+        .btn-whatsapp-flotante:hover { transform: scale(1.12) translateY(-3px); color: white; }
+
+        /* ── RESPONSIVE ─────────────────────────────────────────── */
+        @media (max-width: 1024px) {
+            .container-footer { grid-template-columns: repeat(2,1fr); gap: 36px; }
+        }
         @media (max-width: 768px) {
-            body { padding-top: 70px; }
+            body { padding-top: 68px; }
             .top-bar { display: none; }
-            .encabezado { top: 0; padding: 15px 20px; }
-            .menu-toggle { display: block; }
-            .navegacion-principal { 
-                position: fixed; top: 70px; left: -100%; width: 80%; height: 100%; 
-                background: white; transition: 0.3s; padding: 40px; box-shadow: 10px 0 20px rgba(0,0,0,0.1);
+            .encabezado { top: 0; padding: 13px 18px; }
+            .btn-header { display: none; }
+            .menu-toggle { display: flex; }
+            .navegacion-principal {
+                position: fixed; top: 0; left: -100%;
+                width: min(300px, 82vw); height: 100dvh;
+                background: white; transition: left 0.35s cubic-bezier(0.4,0,0.2,1);
+                padding: 88px 28px 40px; box-shadow: 8px 0 32px rgba(0,0,0,0.14);
+                z-index: 999; overflow-y: auto;
             }
             .navegacion-principal.activo { left: 0; }
-            .navegacion-principal ul { flex-direction: column; }
-            .caja-legal { padding: 30px 20px; }
+            .navegacion-principal ul { flex-direction: column; gap: 4px; }
+            .navegacion-principal a { display: block; padding: 13px 18px; border-radius: 12px; font-size: 16px; }
+            .caja-legal { padding: 36px 26px; }
+            .container-footer { grid-template-columns: repeat(2,1fr); gap: 32px; }
+        }
+        @media (max-width: 480px) {
+            .container-footer { grid-template-columns: 1fr; }
+            .caja-legal { padding: 28px 18px; }
+            .logo a { font-size: 17px; }
+            .logo-img { height: 36px; }
+        }
+        @media (max-width: 360px) {
+            body { padding-top: 64px; }
+            .encabezado { padding: 11px 14px; }
         }
     </style>
 </head>
 <body>
 
+    <!-- ── TOP BAR ───────────────────────────────────────────── -->
     <div class="top-bar">
         <div class="container-top">
             <div class="info-contacto-top">
@@ -192,14 +274,17 @@
         </div>
     </div>
 
+    <!-- ── HEADER ────────────────────────────────────────────── -->
     <header class="encabezado">
         <div class="logo">
-    <a href="index.html">
-        <img src="LOGOTIPO.png" alt="Logo Mantenimientos NL" class="logo-img">
-        Mantenimientos NL
-    </a>
-</div>
-        <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+            <a href="index.html">
+                <img src="LOGOTIPO.png" alt="Logo Mantenimientos NL" class="logo-img">
+                Mantenimientos NL
+            </a>
+        </div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
         <nav class="navegacion-principal" id="navegacion-principal">
             <ul>
                 <li><a href="index.html#inicio">Inicio</a></li>
@@ -211,12 +296,20 @@
         <a href="index.html#contacto" class="btn-header">Presupuesto Gratis</a>
     </header>
 
-    <main class="container" style="padding-top: 40px;">
-        <h1 data-aos="fade-down">Aviso Legal</h1>
-        
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- ── PAGE HERO ─────────────────────────────────────────── -->
+    <section class="page-hero">
+        <div data-aos="fade-up">
+            <span class="subtitulo-seccion">Legal</span>
+            <h1>Aviso Legal</h1>
+        </div>
+    </section>
+
+    <!-- ── CONTENIDO ─────────────────────────────────────────── -->
+    <main class="container">
         <div class="caja-legal" data-aos="fade-up">
-            <p>El presente aviso legal regula el uso y utilización del sitio web <strong>www.mantenimientosnl.com</strong>, del que es titular Mantenimientos NL.</p>
-            <p>La navegación por el sitio web le atribuye la condición de USUARIO del mismo y conlleva su aceptación plena y sin reservas de todas y cada una de las condiciones publicadas en este aviso legal.</p>
+            <p>El presente aviso legal regula el uso y utilización del sitio web <strong>www.mantenimientosnl.com</strong>, del que es titular Mantenimientos NL. La navegación por el sitio web le atribuye la condición de USUARIO del mismo y conlleva su aceptación plena y sin reservas de todas y cada una de las condiciones publicadas en este aviso legal.</p>
 
             <h2>1. Datos identificativos</h2>
             <p>En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico, se reflejan a continuación los siguientes datos:</p>
@@ -252,57 +345,66 @@
         </div>
     </main>
 
-    <footer class="pie-pagina">
+    <!-- ── FOOTER ────────────────────────────────────────────── -->
+    <footer class="pie-pagina" style="margin-top: 40px;">
         <div class="container-footer">
             <div class="footer-col">
                 <h4>Mantenimientos NL</h4>
                 <p>Tu socio de confianza en Marbella para el cuidado integral de jardines y piscinas. Trato cercano, esfuerzo y resultados honestos en cada hogar.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/34611275011" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
             </div>
-
             <div class="footer-col">
                 <h5>Navegación</h5>
                 <ul>
-                    <li><a href="index.html#inicio">Inicio</a></li>
-                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="index.html#servicios">Servicios</a></li>
-                    <li><a href="index.html#contacto">Contacto</a></li>
+                    <li><a href="index.html#inicio"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="nosotros.html"><i class="fas fa-chevron-right"></i> Sobre Nosotros</a></li>
+                    <li><a href="index.html#servicios"><i class="fas fa-chevron-right"></i> Servicios</a></li>
+                    <li><a href="index.html#contacto"><i class="fas fa-chevron-right"></i> Contacto</a></li>
                 </ul>
             </div>
-
             <div class="footer-col">
                 <h5>Legal</h5>
                 <ul>
-                    <li><a href="aviso-legal.html">Aviso Legal</a></li>
-                    <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
-                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="aviso-legal.html"><i class="fas fa-chevron-right"></i> Aviso Legal</a></li>
+                    <li><a href="terminos-condiciones.html"><i class="fas fa-chevron-right"></i> Términos y Condiciones</a></li>
+                    <li><a href="politica-privacidad.html"><i class="fas fa-chevron-right"></i> Política de Privacidad</a></li>
                 </ul>
             </div>
-
             <div class="footer-col">
                 <h5>Nuestros Servicios</h5>
                 <p class="footer-especialidades">
-                    <strong>Jardineros en Marbella</strong>, especialistas en <strong>Poda de Altura</strong>, expertos en <strong>Sistemas de Riego Automático</strong>, Mantenimiento de comunidades y cuidado de piscinas.
+                    <strong>Jardineros en Marbella</strong>, especialistas en <strong>Poda de Altura</strong>, expertos en <strong>Sistemas de Riego Automático</strong>, mantenimiento de comunidades y cuidado de piscinas.
                 </p>
             </div>
         </div>
-
+        <div class="footer-divider"></div>
         <div class="copyright">
             <p>&copy; 2026 Mantenimientos NL. Marbella, Málaga. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <a href="https://wa.me/34611275011" class="btn-whatsapp-flotante" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://wa.me/34611275011" class="btn-whatsapp-flotante" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 1000, once: true });
+        AOS.init({ duration: 900, once: true, offset: 60 });
 
-        // MENÚ MÓVIL
         const menuToggle = document.getElementById('menu-toggle');
         const navegacion = document.getElementById('navegacion-principal');
-        menuToggle.addEventListener('click', () => {
-            navegacion.classList.toggle('activo');
-        });
+        const navOverlay = document.getElementById('nav-overlay');
+        const menuIcon   = menuToggle.querySelector('i');
+
+        function abrirNav() { navegacion.classList.add('activo'); navOverlay.classList.add('activo'); document.body.style.overflow = 'hidden'; menuIcon.className = 'fas fa-times'; }
+        function cerrarNav() { navegacion.classList.remove('activo'); navOverlay.classList.remove('activo'); document.body.style.overflow = ''; menuIcon.className = 'fas fa-bars'; }
+        menuToggle.addEventListener('click', () => navegacion.classList.contains('activo') ? cerrarNav() : abrirNav());
+        navOverlay.addEventListener('click', cerrarNav);
+        document.querySelectorAll('.navegacion-principal a').forEach(a => a.addEventListener('click', cerrarNav));
     </script>
 </body>
 </html>
