@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aviso Legal | Mantenimientos NL - Marbella</title>
-    <meta name="description" content="Aviso legal y condiciones de uso de la página web de Mantenimientos NL, expertos en jardinería y piscinas en Marbella.">
+    <title>Cookie Policy | Mantenimientos NL - Marbella</title>
+    <meta name="description" content="Cookie policy for Mantenimientos NL. Information about the cookies used on our gardening and pool maintenance website in Marbella.">
     <meta name="robots" content="noindex, follow">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -171,6 +171,29 @@
         .lista-legal li:last-child { border-bottom: none; }
         .lista-legal li strong { color: var(--texto-medio); font-weight: 600; }
 
+        /* ── TABLA COOKIES ──────────────────────────────────────── */
+        .tabla-cookies {
+            width: 100%; border-collapse: collapse;
+            margin: 18px 0 24px; font-size: 13px;
+            border-radius: 12px; overflow: hidden;
+            box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+        }
+        .tabla-cookies thead tr {
+            background: linear-gradient(135deg, var(--verde-oscuro), var(--verde));
+            color: white;
+        }
+        .tabla-cookies th {
+            padding: 13px 16px; text-align: left;
+            font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 12px;
+        }
+        .tabla-cookies td {
+            padding: 12px 16px; color: var(--texto-suave);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .tabla-cookies tbody tr:nth-child(even) { background: #f8fbf8; }
+        .tabla-cookies tbody tr:last-child td { border-bottom: none; }
+        .tabla-cookies td strong { color: var(--texto-medio); }
+
         /* ── FOOTER ─────────────────────────────────────────────── */
         .pie-pagina { background: #0B2410; padding: 70px 0 0; }
         .container-footer {
@@ -237,12 +260,15 @@
             .navegacion-principal a { display: block; padding: 13px 18px; border-radius: 12px; font-size: 16px; }
             .caja-legal { padding: 36px 26px; }
             .container-footer { grid-template-columns: repeat(2,1fr); gap: 32px; }
+            .tabla-cookies { font-size: 12px; }
+            .tabla-cookies th, .tabla-cookies td { padding: 10px 12px; }
         }
         @media (max-width: 480px) {
             .container-footer { grid-template-columns: 1fr; }
             .caja-legal { padding: 28px 18px; }
             .logo a { font-size: 17px; }
             .logo-img { height: 36px; }
+            .tabla-cookies { display: block; overflow-x: auto; }
         }
         @media (max-width: 360px) {
             body { padding-top: 64px; }
@@ -262,11 +288,11 @@
             <div class="selector-idioma">
                 <span class="location-top"><i class="fas fa-map-marker-alt"></i> Marbella</span>
                 <div class="lang-switcher">
-                    <a href="aviso-legal.html" class="lang-link active">
+                    <a href="politica-cookies.html" class="lang-link">
                         <img src="https://flagcdn.com/w20/es.png" alt="Español"> ES
                     </a>
                     <span class="separator">|</span>
-                    <a href="legal-notice_en.html" class="lang-link">
+                    <a href="cookie-policy_en.html" class="lang-link active">
                         <img src="https://flagcdn.com/w20/gb.png" alt="English"> EN
                     </a>
                 </div>
@@ -277,23 +303,23 @@
     <!-- ── HEADER ────────────────────────────────────────────── -->
     <header class="encabezado">
         <div class="logo">
-            <a href="index.html">
+            <a href="home.html">
                 <img src="LOGOTIPO.png" alt="Logo Mantenimientos NL" class="logo-img">
                 Mantenimientos NL
             </a>
         </div>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
             <i class="fas fa-bars"></i>
         </button>
         <nav class="navegacion-principal" id="navegacion-principal">
             <ul>
-                <li><a href="index.html#inicio">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="index.html#servicios">Servicios</a></li>
-                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="home.html#inicio">Home</a></li>
+                <li><a href="about_en.html">About Us</a></li>
+                <li><a href="home.html#servicios">Services</a></li>
+                <li><a href="home.html#contacto">Contact</a></li>
             </ul>
         </nav>
-        <a href="index.html#contacto" class="btn-header">Presupuesto Gratis</a>
+        <a href="home.html#contacto" class="btn-header">Free Quote</a>
     </header>
 
     <div class="nav-overlay" id="nav-overlay"></div>
@@ -302,46 +328,74 @@
     <section class="page-hero">
         <div data-aos="fade-up">
             <span class="subtitulo-seccion">Legal</span>
-            <h1>Aviso Legal</h1>
+            <h1>Cookie Policy</h1>
         </div>
     </section>
 
     <!-- ── CONTENIDO ─────────────────────────────────────────── -->
     <main class="container">
         <div class="caja-legal" data-aos="fade-up">
-            <p>El presente aviso legal regula el uso y utilización del sitio web <strong>www.mantenimientosnl.com</strong>, del que es titular Mantenimientos NL. La navegación por el sitio web le atribuye la condición de USUARIO del mismo y conlleva su aceptación plena y sin reservas de todas y cada una de las condiciones publicadas en este aviso legal.</p>
+            <p>This cookie policy explains what cookies are, how we use them on the website <strong>www.mantenimientosnl.com</strong>, and how you can manage them. By continuing to browse our website, you accept the use of cookies as described in this document.</p>
 
-            <h2>1. Datos identificativos</h2>
-            <p>En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico, se reflejan a continuación los siguientes datos:</p>
+            <h2>1. What are cookies?</h2>
+            <p>Cookies are small text files that websites store on your device (computer, tablet, mobile) when you visit them. They allow the site to remember your preferences and actions over time, so you do not have to re-enter certain information on every visit.</p>
+            <p>In addition to cookies in the strict sense, this website also uses <strong>local storage (localStorage)</strong>, a similar technology that saves information in your browser without an automatic expiry date.</p>
+
+            <h2>2. Cookies we use</h2>
+            <p>This website is a static service-presentation site. It does not use analytics or advertising systems. The only storage technologies employed are as follows:</p>
+
+            <table class="tabla-cookies">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Purpose</th>
+                        <th>Duration</th>
+                        <th>Provider</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>cookieConsent</strong></td>
+                        <td>localStorage</td>
+                        <td>Stores your choice to accept or reject cookies so the banner is not shown again</td>
+                        <td>Persistent (until browser data is cleared)</td>
+                        <td>Mantenimientos NL (own)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>3. Third-party cookies</h2>
+            <p>This website loads external resources for its correct visual functioning:</p>
             <ul class="lista-legal">
-                <li><strong>Titular:</strong> Mantenimientos NL (Néstor Ramón Lezcano Velázquez / Autónomo)</li>
-                <li><strong>NIF/CIF:</strong> Y-4941651-T</li>
-                <li><strong>Domicilio:</strong> Calle Boquerón 5, PO3 13, Marbella, Málaga, España</li>
-                <li><strong>Correo electrónico:</strong> servicios.mantenimientosnl@gmail.com</li>
-                <li><strong>Teléfono:</strong> +34 611 275 011</li>
+                <li><strong>Google Fonts</strong> — web typefaces loaded from <em>fonts.googleapis.com</em>. Google may log the font request; see their policy at <em>policies.google.com</em>.</li>
+                <li><strong>Font Awesome (cdnjs.cloudflare.com)</strong> — vector icons. Cloudflare may log resource requests.</li>
+                <li><strong>AOS (unpkg.com)</strong> — scroll-animation library. No own cookies.</li>
             </ul>
+            <p>None of these services place tracking or advertising cookies on your device through our website.</p>
 
-            <h2>2. Propiedad intelectual e industrial</h2>
-            <p>Mantenimientos NL por sí o como cesionaria, es titular de todos los derechos de propiedad intelectual e industrial de su página web, así como de los elementos contenidos en la misma (a título enunciativo: imágenes, sonido, audio, vídeo, software o textos; marcas o logotipos, combinaciones de colores, estructura y diseño, etc.).</p>
-            <p>Quedan expresamente prohibidas la reproducción, la distribución y la comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin la autorización previa y por escrito de Mantenimientos NL.</p>
-
-            <h2>3. Condiciones de uso del portal</h2>
-            <p>El usuario se compromete a hacer un uso adecuado y lícito del sitio web y de los contenidos y servicios, de conformidad con la legislación aplicable en cada momento, la moral, las buenas costumbres generalmente aceptadas y el orden público.</p>
-            <p>El usuario deberá abstenerse de:</p>
+            <h2>4. How to manage or delete cookies</h2>
+            <p>You can withdraw your consent at any time by clearing the local storage data in your browser. Below you will find instructions for the most common browsers:</p>
             <ul class="lista-legal">
-                <li>Hacer un uso no autorizado o fraudulento de la página web.</li>
-                <li>Provocar daños en los sistemas físicos y lógicos de Mantenimientos NL, de sus proveedores o de terceras personas.</li>
-                <li>Introducir o difundir en la red virus informáticos o cualesquiera otros sistemas físicos o lógicos que sean susceptibles de provocar daños.</li>
+                <li><strong>Google Chrome:</strong> Menu → Settings → Privacy and security → Clear browsing data → Cookies and other site data.</li>
+                <li><strong>Mozilla Firefox:</strong> Menu → Settings → Privacy &amp; Security → Cookies and Site Data → Clear Data.</li>
+                <li><strong>Safari:</strong> Preferences → Privacy → Manage Website Data → Remove All.</li>
+                <li><strong>Microsoft Edge:</strong> Menu → Settings → Privacy, search, and services → Clear browsing data → Cookies.</li>
             </ul>
+            <p>Please note that clearing this data will cause the cookie banner to reappear on your next visit.</p>
 
-            <h2>4. Exclusión de garantías y responsabilidad</h2>
-            <p>Mantenimientos NL no se hace responsable, en ningún caso, de los daños y perjuicios de cualquier naturaleza que pudieran ocasionar, a título enunciativo: errores u omisiones en los contenidos, falta de disponibilidad del portal o la transmisión de virus o programas maliciosos o lesivos en los contenidos, a pesar de haber adoptado todas las medidas tecnológicas necesarias para evitarlo.</p>
+            <h2>5. Legal basis</h2>
+            <p>The storage of the cookie preference (<em>cookieConsent</em>) is based on the <strong>legitimate interest</strong> of the website owner in not repeatedly displaying the consent banner once the user has already made a choice, pursuant to Article 6(1)(f) of the GDPR and the applicable Spanish ePrivacy regulations.</p>
 
-            <h2>5. Modificaciones</h2>
-            <p>Mantenimientos NL se reserva el derecho de efectuar sin previo aviso las modificaciones que considere oportunas en su portal, pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se presten a través de la misma como la forma en la que éstos aparezcan presentados o localizados.</p>
+            <h2>6. Updates to this policy</h2>
+            <p>Mantenimientos NL reserves the right to update this cookie policy at any time to reflect legislative changes or updates to the services used. We recommend checking this page periodically. The date of the last update is <strong>May 2026</strong>.</p>
 
-            <h2>6. Legislación aplicable y jurisdicción</h2>
-            <p>La relación entre Mantenimientos NL y el USUARIO se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados y tribunales de la ciudad de Málaga, salvo que la ley aplicable disponga otra cosa.</p>
+            <h2>7. Contact</h2>
+            <p>If you have any questions about the use of cookies on this website, please contact us at:</p>
+            <ul class="lista-legal">
+                <li><strong>Email:</strong> servicios.mantenimientosnl@gmail.com</li>
+                <li><strong>Phone:</strong> +34 611 275 011</li>
+            </ul>
         </div>
     </main>
 
@@ -350,39 +404,39 @@
         <div class="container-footer">
             <div class="footer-col">
                 <h4>Mantenimientos NL</h4>
-                <p>Tu socio de confianza en Marbella para el cuidado integral de jardines y piscinas. Trato cercano, esfuerzo y resultados honestos en cada hogar.</p>
+                <p>Your trusted partner in Marbella for the comprehensive care of gardens and pools. Personal service, hard work and honest results in every home.</p>
                 <div class="footer-social">
                     <a href="https://wa.me/34611275011" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
             <div class="footer-col">
-                <h5>Navegación</h5>
+                <h5>Navigation</h5>
                 <ul>
-                    <li><a href="index.html#inicio"><i class="fas fa-chevron-right"></i> Inicio</a></li>
-                    <li><a href="nosotros.html"><i class="fas fa-chevron-right"></i> Sobre Nosotros</a></li>
-                    <li><a href="index.html#servicios"><i class="fas fa-chevron-right"></i> Servicios</a></li>
-                    <li><a href="index.html#contacto"><i class="fas fa-chevron-right"></i> Contacto</a></li>
-                    <li><a href="politica-cookies.html"><i class="fas fa-chevron-right"></i> Política de Cookies</a></li>
+                    <li><a href="home.html#inicio"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about_en.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="home.html#servicios"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="home.html#contacto"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    <li><a href="cookie-policy_en.html"><i class="fas fa-chevron-right"></i> Cookie Policy</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h5>Legal</h5>
                 <ul>
-                    <li><a href="aviso-legal.html"><i class="fas fa-chevron-right"></i> Aviso Legal</a></li>
-                    <li><a href="terminos-condiciones.html"><i class="fas fa-chevron-right"></i> Términos y Condiciones</a></li>
-                    <li><a href="politica-privacidad.html"><i class="fas fa-chevron-right"></i> Política de Privacidad</a></li>
+                    <li><a href="legal-notice_en.html"><i class="fas fa-chevron-right"></i> Legal Notice</a></li>
+                    <li><a href="terms_en.html"><i class="fas fa-chevron-right"></i> Terms &amp; Conditions</a></li>
+                    <li><a href="privacy-policy_en.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h5>Nuestros Servicios</h5>
+                <h5>Our Services</h5>
                 <p class="footer-especialidades">
-                    <strong>Jardineros en Marbella</strong>, especialistas en <strong>Poda de Altura</strong>, expertos en <strong>Sistemas de Riego Automático</strong>, mantenimiento de comunidades y cuidado de piscinas.
+                    <strong>Gardeners in Marbella</strong>, specialists in <strong>Height Pruning</strong>, experts in <strong>Automatic Irrigation Systems</strong>, community maintenance and pool care.
                 </p>
             </div>
         </div>
         <div class="footer-divider"></div>
         <div class="copyright">
-            <p>&copy; 2026 Mantenimientos NL. Marbella, Málaga. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Mantenimientos NL. Marbella, Málaga. All rights reserved.</p>
         </div>
     </footer>
 

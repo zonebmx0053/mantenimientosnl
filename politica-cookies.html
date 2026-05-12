@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aviso Legal | Mantenimientos NL - Marbella</title>
-    <meta name="description" content="Aviso legal y condiciones de uso de la página web de Mantenimientos NL, expertos en jardinería y piscinas en Marbella.">
+    <title>Política de Cookies | Mantenimientos NL - Marbella</title>
+    <meta name="description" content="Política de cookies de Mantenimientos NL. Información sobre las cookies utilizadas en nuestra página web de jardinería y piscinas en Marbella.">
     <meta name="robots" content="noindex, follow">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -171,6 +171,29 @@
         .lista-legal li:last-child { border-bottom: none; }
         .lista-legal li strong { color: var(--texto-medio); font-weight: 600; }
 
+        /* ── TABLA COOKIES ──────────────────────────────────────── */
+        .tabla-cookies {
+            width: 100%; border-collapse: collapse;
+            margin: 18px 0 24px; font-size: 13px;
+            border-radius: 12px; overflow: hidden;
+            box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+        }
+        .tabla-cookies thead tr {
+            background: linear-gradient(135deg, var(--verde-oscuro), var(--verde));
+            color: white;
+        }
+        .tabla-cookies th {
+            padding: 13px 16px; text-align: left;
+            font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 12px;
+        }
+        .tabla-cookies td {
+            padding: 12px 16px; color: var(--texto-suave);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .tabla-cookies tbody tr:nth-child(even) { background: #f8fbf8; }
+        .tabla-cookies tbody tr:last-child td { border-bottom: none; }
+        .tabla-cookies td strong { color: var(--texto-medio); }
+
         /* ── FOOTER ─────────────────────────────────────────────── */
         .pie-pagina { background: #0B2410; padding: 70px 0 0; }
         .container-footer {
@@ -237,12 +260,15 @@
             .navegacion-principal a { display: block; padding: 13px 18px; border-radius: 12px; font-size: 16px; }
             .caja-legal { padding: 36px 26px; }
             .container-footer { grid-template-columns: repeat(2,1fr); gap: 32px; }
+            .tabla-cookies { font-size: 12px; }
+            .tabla-cookies th, .tabla-cookies td { padding: 10px 12px; }
         }
         @media (max-width: 480px) {
             .container-footer { grid-template-columns: 1fr; }
             .caja-legal { padding: 28px 18px; }
             .logo a { font-size: 17px; }
             .logo-img { height: 36px; }
+            .tabla-cookies { display: block; overflow-x: auto; }
         }
         @media (max-width: 360px) {
             body { padding-top: 64px; }
@@ -262,11 +288,11 @@
             <div class="selector-idioma">
                 <span class="location-top"><i class="fas fa-map-marker-alt"></i> Marbella</span>
                 <div class="lang-switcher">
-                    <a href="aviso-legal.html" class="lang-link active">
+                    <a href="politica-cookies.html" class="lang-link active">
                         <img src="https://flagcdn.com/w20/es.png" alt="Español"> ES
                     </a>
                     <span class="separator">|</span>
-                    <a href="legal-notice_en.html" class="lang-link">
+                    <a href="cookie-policy_en.html" class="lang-link">
                         <img src="https://flagcdn.com/w20/gb.png" alt="English"> EN
                     </a>
                 </div>
@@ -302,46 +328,74 @@
     <section class="page-hero">
         <div data-aos="fade-up">
             <span class="subtitulo-seccion">Legal</span>
-            <h1>Aviso Legal</h1>
+            <h1>Política de Cookies</h1>
         </div>
     </section>
 
     <!-- ── CONTENIDO ─────────────────────────────────────────── -->
     <main class="container">
         <div class="caja-legal" data-aos="fade-up">
-            <p>El presente aviso legal regula el uso y utilización del sitio web <strong>www.mantenimientosnl.com</strong>, del que es titular Mantenimientos NL. La navegación por el sitio web le atribuye la condición de USUARIO del mismo y conlleva su aceptación plena y sin reservas de todas y cada una de las condiciones publicadas en este aviso legal.</p>
+            <p>Esta política de cookies explica qué son las cookies, cómo las utilizamos en el sitio web <strong>www.mantenimientosnl.com</strong> y cómo puedes gestionarlas. Al continuar navegando por nuestra web, aceptas el uso de cookies conforme a lo descrito en este documento.</p>
 
-            <h2>1. Datos identificativos</h2>
-            <p>En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico, se reflejan a continuación los siguientes datos:</p>
+            <h2>1. ¿Qué son las cookies?</h2>
+            <p>Las cookies son pequeños archivos de texto que los sitios web guardan en tu dispositivo (ordenador, tablet, móvil) cuando los visitas. Sirven para que el sitio recuerde tus preferencias y acciones a lo largo del tiempo, de modo que no tengas que volver a introducir ciertos datos cada vez que visitas la página.</p>
+            <p>Además de las cookies en sentido estricto, esta web también hace uso de <strong>almacenamiento local (localStorage)</strong>, una tecnología similar que guarda información en tu navegador sin fecha de expiración automática.</p>
+
+            <h2>2. Cookies que utilizamos</h2>
+            <p>Esta web es un sitio estático de presentación de servicios. No utiliza sistemas de analítica ni publicidad. Las únicas tecnologías de almacenamiento empleadas son las siguientes:</p>
+
+            <table class="tabla-cookies">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Finalidad</th>
+                        <th>Duración</th>
+                        <th>Proveedor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>cookieConsent</strong></td>
+                        <td>localStorage</td>
+                        <td>Guarda tu elección de aceptar o rechazar cookies para no volver a mostrarte el aviso</td>
+                        <td>Persistente (hasta borrar datos del navegador)</td>
+                        <td>Mantenimientos NL (propio)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>3. Cookies de terceros</h2>
+            <p>Esta web carga recursos externos para su correcto funcionamiento visual:</p>
             <ul class="lista-legal">
-                <li><strong>Titular:</strong> Mantenimientos NL (Néstor Ramón Lezcano Velázquez / Autónomo)</li>
-                <li><strong>NIF/CIF:</strong> Y-4941651-T</li>
-                <li><strong>Domicilio:</strong> Calle Boquerón 5, PO3 13, Marbella, Málaga, España</li>
+                <li><strong>Google Fonts</strong> — tipografías web cargadas desde <em>fonts.googleapis.com</em>. Google puede registrar la solicitud de fuente; puedes consultar su política en <em>policies.google.com</em>.</li>
+                <li><strong>Font Awesome (cdnjs.cloudflare.com)</strong> — iconos vectoriales. Cloudflare puede registrar las solicitudes de recurso.</li>
+                <li><strong>AOS (unpkg.com)</strong> — librería de animaciones de desplazamiento. Sin cookies propias.</li>
+            </ul>
+            <p>Ninguno de estos servicios establece cookies de seguimiento o publicidad en tu dispositivo a través de nuestra web.</p>
+
+            <h2>4. ¿Cómo gestionar o eliminar las cookies?</h2>
+            <p>Puedes retirar tu consentimiento en cualquier momento borrando los datos de almacenamiento local de tu navegador. A continuación te indicamos cómo hacerlo en los navegadores más habituales:</p>
+            <ul class="lista-legal">
+                <li><strong>Google Chrome:</strong> Menú → Configuración → Privacidad y seguridad → Borrar datos de navegación → Cookies y otros datos de sitios.</li>
+                <li><strong>Mozilla Firefox:</strong> Menú → Configuración → Privacidad y seguridad → Cookies y datos del sitio → Limpiar datos.</li>
+                <li><strong>Safari:</strong> Preferencias → Privacidad → Gestionar datos del sitio web → Eliminar todo.</li>
+                <li><strong>Microsoft Edge:</strong> Menú → Configuración → Privacidad, búsqueda y servicios → Borrar datos de exploración → Cookies.</li>
+            </ul>
+            <p>Ten en cuenta que eliminar estos datos hará que el aviso de cookies vuelva a aparecer en tu próxima visita.</p>
+
+            <h2>5. Base legal</h2>
+            <p>El almacenamiento de la preferencia de cookies (<em>cookieConsent</em>) tiene como base legal el <strong>interés legítimo</strong> del titular del sitio web para no mostrar repetidamente el banner de consentimiento una vez que el usuario ya ha tomado una decisión, en virtud del artículo 6.1.f del RGPD y el artículo 22.2 de la LSSI.</p>
+
+            <h2>6. Actualizaciones de esta política</h2>
+            <p>Mantenimientos NL se reserva el derecho de actualizar esta política de cookies en cualquier momento para adaptarla a novedades legislativas o cambios en los servicios empleados. Se recomienda revisar esta página periódicamente. La fecha de última actualización es <strong>mayo de 2026</strong>.</p>
+
+            <h2>7. Contacto</h2>
+            <p>Si tienes alguna pregunta sobre el uso de cookies en esta web, puedes contactarnos en:</p>
+            <ul class="lista-legal">
                 <li><strong>Correo electrónico:</strong> servicios.mantenimientosnl@gmail.com</li>
                 <li><strong>Teléfono:</strong> +34 611 275 011</li>
             </ul>
-
-            <h2>2. Propiedad intelectual e industrial</h2>
-            <p>Mantenimientos NL por sí o como cesionaria, es titular de todos los derechos de propiedad intelectual e industrial de su página web, así como de los elementos contenidos en la misma (a título enunciativo: imágenes, sonido, audio, vídeo, software o textos; marcas o logotipos, combinaciones de colores, estructura y diseño, etc.).</p>
-            <p>Quedan expresamente prohibidas la reproducción, la distribución y la comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin la autorización previa y por escrito de Mantenimientos NL.</p>
-
-            <h2>3. Condiciones de uso del portal</h2>
-            <p>El usuario se compromete a hacer un uso adecuado y lícito del sitio web y de los contenidos y servicios, de conformidad con la legislación aplicable en cada momento, la moral, las buenas costumbres generalmente aceptadas y el orden público.</p>
-            <p>El usuario deberá abstenerse de:</p>
-            <ul class="lista-legal">
-                <li>Hacer un uso no autorizado o fraudulento de la página web.</li>
-                <li>Provocar daños en los sistemas físicos y lógicos de Mantenimientos NL, de sus proveedores o de terceras personas.</li>
-                <li>Introducir o difundir en la red virus informáticos o cualesquiera otros sistemas físicos o lógicos que sean susceptibles de provocar daños.</li>
-            </ul>
-
-            <h2>4. Exclusión de garantías y responsabilidad</h2>
-            <p>Mantenimientos NL no se hace responsable, en ningún caso, de los daños y perjuicios de cualquier naturaleza que pudieran ocasionar, a título enunciativo: errores u omisiones en los contenidos, falta de disponibilidad del portal o la transmisión de virus o programas maliciosos o lesivos en los contenidos, a pesar de haber adoptado todas las medidas tecnológicas necesarias para evitarlo.</p>
-
-            <h2>5. Modificaciones</h2>
-            <p>Mantenimientos NL se reserva el derecho de efectuar sin previo aviso las modificaciones que considere oportunas en su portal, pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se presten a través de la misma como la forma en la que éstos aparezcan presentados o localizados.</p>
-
-            <h2>6. Legislación aplicable y jurisdicción</h2>
-            <p>La relación entre Mantenimientos NL y el USUARIO se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados y tribunales de la ciudad de Málaga, salvo que la ley aplicable disponga otra cosa.</p>
         </div>
     </main>
 

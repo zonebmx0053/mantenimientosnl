@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aviso Legal | Mantenimientos NL - Marbella</title>
-    <meta name="description" content="Aviso legal y condiciones de uso de la página web de Mantenimientos NL, expertos en jardinería y piscinas en Marbella.">
+    <title>Privacy Policy | Mantenimientos NL - Marbella</title>
+    <meta name="description" content="Information about how Mantenimientos NL in Marbella processes your personal data. Your privacy is our priority.">
     <meta name="robots" content="noindex, follow">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -120,56 +120,66 @@
         }
         .page-hero::before {
             content: ''; position: absolute; inset: 0;
-            background: radial-gradient(ellipse at 30% 50%, rgba(255,255,255,0.05) 0%, transparent 60%);
+            background: radial-gradient(ellipse at 70% 50%, rgba(255,255,255,0.05) 0%, transparent 60%);
             pointer-events: none;
         }
         .page-hero .subtitulo-seccion {
             background: rgba(255,255,255,0.12);
             color: #A5D6A7; border: 1px solid rgba(165,214,167,0.3);
         }
-        .page-hero h1 {
-            color: white; font-size: clamp(28px, 5vw, 46px);
-            margin-bottom: 0; font-weight: 800;
-        }
+        .page-hero h1 { color: white; font-size: clamp(28px, 5vw, 46px); margin-bottom: 0; font-weight: 800; }
 
-        /* ── CONTENIDO LEGAL ─────────────────────────────────────── */
+        /* ── LEGAL CONTENT ───────────────────────────────────────── */
         .caja-legal {
-            background: white;
-            padding: 52px 56px;
-            border-radius: 24px;
-            box-shadow: var(--sombra-card);
-            max-width: 860px;
-            margin: 0 auto;
+            background: white; padding: 52px 56px; border-radius: 24px;
+            box-shadow: var(--sombra-card); max-width: 860px; margin: 0 auto;
             border: 1px solid rgba(46,125,50,0.07);
         }
         .caja-legal > p:first-child { font-size: 15px; color: var(--texto-medio); margin-bottom: 20px; }
 
         .caja-legal h2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 16px; font-weight: 700;
-            color: var(--verde-oscuro);
-            margin-top: 36px; margin-bottom: 12px;
-            padding-left: 16px;
-            border-left: 3px solid var(--verde);
+            font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 700;
+            color: var(--verde-oscuro); margin-top: 36px; margin-bottom: 12px;
+            padding-left: 16px; border-left: 3px solid var(--verde);
             text-align: left; display: block;
         }
         .caja-legal h2:first-of-type { margin-top: 24px; }
 
-        .lista-legal {
+        .lista-privacidad {
             list-style: none; padding: 0; margin-bottom: 16px;
         }
-        .lista-legal li {
+        .lista-privacidad li {
             font-size: 14px; color: var(--texto-suave); line-height: 1.75;
-            padding: 9px 0 9px 26px;
-            border-bottom: 1px solid rgba(0,0,0,0.04);
+            padding: 9px 0 9px 26px; border-bottom: 1px solid rgba(0,0,0,0.04);
             position: relative;
         }
-        .lista-legal li::before {
+        .lista-privacidad li::before {
             content: '→'; position: absolute; left: 0;
             color: var(--verde); font-size: 12px; top: 11px;
         }
-        .lista-legal li:last-child { border-bottom: none; }
-        .lista-legal li strong { color: var(--texto-medio); font-weight: 600; }
+        .lista-privacidad li:last-child { border-bottom: none; }
+
+        /* SUMMARY TABLE */
+        .tabla-resumen {
+            width: 100%; border-collapse: collapse;
+            margin: 28px 0; border-radius: 14px;
+            overflow: hidden; font-size: 13px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        }
+        .tabla-resumen th, .tabla-resumen td {
+            padding: 14px 18px;
+            border: 1px solid rgba(0,0,0,0.06);
+            text-align: left; vertical-align: top;
+        }
+        .tabla-resumen th {
+            background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+            color: white; font-family: 'Poppins', sans-serif;
+            font-weight: 600; font-size: 12px;
+            text-transform: uppercase; letter-spacing: 0.5px;
+            width: 150px;
+        }
+        .tabla-resumen td { color: var(--texto-suave); font-size: 13px; line-height: 1.6; }
+        .tabla-resumen tr:hover td { background: var(--fondo); }
 
         /* ── FOOTER ─────────────────────────────────────────────── */
         .pie-pagina { background: #0B2410; padding: 70px 0 0; }
@@ -216,9 +226,7 @@
         .btn-whatsapp-flotante:hover { transform: scale(1.12) translateY(-3px); color: white; }
 
         /* ── RESPONSIVE ─────────────────────────────────────────── */
-        @media (max-width: 1024px) {
-            .container-footer { grid-template-columns: repeat(2,1fr); gap: 36px; }
-        }
+        @media (max-width: 1024px) { .container-footer { grid-template-columns: repeat(2,1fr); gap: 36px; } }
         @media (max-width: 768px) {
             body { padding-top: 68px; }
             .top-bar { display: none; }
@@ -227,8 +235,8 @@
             .menu-toggle { display: flex; }
             .navegacion-principal {
                 position: fixed; top: 0; left: -100%;
-                width: min(300px, 82vw); height: 100dvh;
-                background: white; transition: left 0.35s cubic-bezier(0.4,0,0.2,1);
+                width: min(300px, 82vw); height: 100dvh; background: white;
+                transition: left 0.35s cubic-bezier(0.4,0,0.2,1);
                 padding: 88px 28px 40px; box-shadow: 8px 0 32px rgba(0,0,0,0.14);
                 z-index: 999; overflow-y: auto;
             }
@@ -237,17 +245,16 @@
             .navegacion-principal a { display: block; padding: 13px 18px; border-radius: 12px; font-size: 16px; }
             .caja-legal { padding: 36px 26px; }
             .container-footer { grid-template-columns: repeat(2,1fr); gap: 32px; }
+            .tabla-resumen th { width: 110px; font-size: 11px; }
         }
         @media (max-width: 480px) {
             .container-footer { grid-template-columns: 1fr; }
             .caja-legal { padding: 28px 18px; }
             .logo a { font-size: 17px; }
             .logo-img { height: 36px; }
+            .tabla-resumen th, .tabla-resumen td { padding: 10px 12px; }
         }
-        @media (max-width: 360px) {
-            body { padding-top: 64px; }
-            .encabezado { padding: 11px 14px; }
-        }
+        @media (max-width: 360px) { body { padding-top: 64px; } .encabezado { padding: 11px 14px; } }
     </style>
 </head>
 <body>
@@ -262,11 +269,11 @@
             <div class="selector-idioma">
                 <span class="location-top"><i class="fas fa-map-marker-alt"></i> Marbella</span>
                 <div class="lang-switcher">
-                    <a href="aviso-legal.html" class="lang-link active">
+                    <a href="politica-privacidad.html" class="lang-link">
                         <img src="https://flagcdn.com/w20/es.png" alt="Español"> ES
                     </a>
                     <span class="separator">|</span>
-                    <a href="legal-notice_en.html" class="lang-link">
+                    <a href="privacy-policy_en.html" class="lang-link active">
                         <img src="https://flagcdn.com/w20/gb.png" alt="English"> EN
                     </a>
                 </div>
@@ -277,23 +284,23 @@
     <!-- ── HEADER ────────────────────────────────────────────── -->
     <header class="encabezado">
         <div class="logo">
-            <a href="index.html">
+            <a href="home.html">
                 <img src="LOGOTIPO.png" alt="Logo Mantenimientos NL" class="logo-img">
                 Mantenimientos NL
             </a>
         </div>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
             <i class="fas fa-bars"></i>
         </button>
         <nav class="navegacion-principal" id="navegacion-principal">
             <ul>
-                <li><a href="index.html#inicio">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="index.html#servicios">Servicios</a></li>
-                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="home.html#inicio">Home</a></li>
+                <li><a href="about_en.html">About</a></li>
+                <li><a href="home.html#servicios">Services</a></li>
+                <li><a href="home.html#contacto">Contact</a></li>
             </ul>
         </nav>
-        <a href="index.html#contacto" class="btn-header">Presupuesto Gratis</a>
+        <a href="home.html#contacto" class="btn-header">Free Quote</a>
     </header>
 
     <div class="nav-overlay" id="nav-overlay"></div>
@@ -302,46 +309,56 @@
     <section class="page-hero">
         <div data-aos="fade-up">
             <span class="subtitulo-seccion">Legal</span>
-            <h1>Aviso Legal</h1>
+            <h1>Privacy Policy</h1>
         </div>
     </section>
 
-    <!-- ── CONTENIDO ─────────────────────────────────────────── -->
+    <!-- ── CONTENT ───────────────────────────────────────────── -->
     <main class="container">
         <div class="caja-legal" data-aos="fade-up">
-            <p>El presente aviso legal regula el uso y utilización del sitio web <strong>www.mantenimientosnl.com</strong>, del que es titular Mantenimientos NL. La navegación por el sitio web le atribuye la condición de USUARIO del mismo y conlleva su aceptación plena y sin reservas de todas y cada una de las condiciones publicadas en este aviso legal.</p>
+            <p>At <strong>Mantenimientos NL</strong> we take the protection of your personal data very seriously. This policy explains how we collect, use and protect your information in accordance with the General Data Protection Regulation (GDPR).</p>
 
-            <h2>1. Datos identificativos</h2>
-            <p>En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico, se reflejan a continuación los siguientes datos:</p>
-            <ul class="lista-legal">
-                <li><strong>Titular:</strong> Mantenimientos NL (Néstor Ramón Lezcano Velázquez / Autónomo)</li>
-                <li><strong>NIF/CIF:</strong> Y-4941651-T</li>
-                <li><strong>Domicilio:</strong> Calle Boquerón 5, PO3 13, Marbella, Málaga, España</li>
-                <li><strong>Correo electrónico:</strong> servicios.mantenimientosnl@gmail.com</li>
-                <li><strong>Teléfono:</strong> +34 611 275 011</li>
+            <table class="tabla-resumen">
+                <tr><th>Controller</th><td>Mantenimientos NL (Néstor Ramón Lezcano Velázquez / Y-4941651-T)</td></tr>
+                <tr><th>Purpose</th><td>Handling enquiries, sending quotes and managing contracted services.</td></tr>
+                <tr><th>Legal basis</th><td>User consent and performance of a service contract.</td></tr>
+                <tr><th>Recipients</th><td>Data is not shared with third parties, except where required by law.</td></tr>
+                <tr><th>Rights</th><td>Access, rectification, erasure and other rights detailed below.</td></tr>
+            </table>
+
+            <h2>1. Who is the Data Controller?</h2>
+            <p>The owner of this website and controller of personal data is Mantenimientos NL, with address at Calle Boquerón 5, PO3 13, Marbella, Málaga, and contact email servicios.mantenimientosnl@gmail.com.</p>
+
+            <h2>2. For what purposes do we process your personal data?</h2>
+            <p>At Mantenimientos NL we process the information provided by interested parties in order to:</p>
+            <ul class="lista-privacidad">
+                <li>Manage and send the requested gardening or maintenance quotes.</li>
+                <li>Provide the contracted maintenance services (pool cleaning, pruning, irrigation, etc.).</li>
+                <li>Answer questions or enquiries submitted through our contact form or WhatsApp.</li>
             </ul>
 
-            <h2>2. Propiedad intelectual e industrial</h2>
-            <p>Mantenimientos NL por sí o como cesionaria, es titular de todos los derechos de propiedad intelectual e industrial de su página web, así como de los elementos contenidos en la misma (a título enunciativo: imágenes, sonido, audio, vídeo, software o textos; marcas o logotipos, combinaciones de colores, estructura y diseño, etc.).</p>
-            <p>Quedan expresamente prohibidas la reproducción, la distribución y la comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin la autorización previa y por escrito de Mantenimientos NL.</p>
+            <h2>3. How long do we keep your data?</h2>
+            <p>Personal data provided will be kept for as long as the commercial relationship is maintained or for the number of years required to comply with legal obligations (e.g. invoicing).</p>
 
-            <h2>3. Condiciones de uso del portal</h2>
-            <p>El usuario se compromete a hacer un uso adecuado y lícito del sitio web y de los contenidos y servicios, de conformidad con la legislación aplicable en cada momento, la moral, las buenas costumbres generalmente aceptadas y el orden público.</p>
-            <p>El usuario deberá abstenerse de:</p>
-            <ul class="lista-legal">
-                <li>Hacer un uso no autorizado o fraudulento de la página web.</li>
-                <li>Provocar daños en los sistemas físicos y lógicos de Mantenimientos NL, de sus proveedores o de terceras personas.</li>
-                <li>Introducir o difundir en la red virus informáticos o cualesquiera otros sistemas físicos o lógicos que sean susceptibles de provocar daños.</li>
+            <h2>4. What is the legal basis for processing your data?</h2>
+            <p>The legal basis for processing your data is the <strong>consent</strong> you give us when sending a message or quote request, and the <strong>performance of the contract</strong> when you engage our services.</p>
+
+            <h2>5. To whom will your data be disclosed?</h2>
+            <p>Your data will not be communicated to any third-party company or organisation, unless there is a legal obligation to do so.</p>
+
+            <h2>6. What are your rights when you provide your data?</h2>
+            <p>Any person has the right to obtain confirmation as to whether Mantenimientos NL is processing personal data concerning them. Interested parties have the right to:</p>
+            <ul class="lista-privacidad">
+                <li>Access their personal data.</li>
+                <li>Request the rectification of inaccurate data.</li>
+                <li>Request erasure when the data is no longer necessary for the purposes for which it was collected.</li>
+                <li>Request the restriction of processing.</li>
+                <li>Object to the processing of their data.</li>
             </ul>
+            <p>To exercise these rights, please send us an email to <strong>servicios.mantenimientosnl@gmail.com</strong> including a copy of your ID document so that we can verify your identity.</p>
 
-            <h2>4. Exclusión de garantías y responsabilidad</h2>
-            <p>Mantenimientos NL no se hace responsable, en ningún caso, de los daños y perjuicios de cualquier naturaleza que pudieran ocasionar, a título enunciativo: errores u omisiones en los contenidos, falta de disponibilidad del portal o la transmisión de virus o programas maliciosos o lesivos en los contenidos, a pesar de haber adoptado todas las medidas tecnológicas necesarias para evitarlo.</p>
-
-            <h2>5. Modificaciones</h2>
-            <p>Mantenimientos NL se reserva el derecho de efectuar sin previo aviso las modificaciones que considere oportunas en su portal, pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se presten a través de la misma como la forma en la que éstos aparezcan presentados o localizados.</p>
-
-            <h2>6. Legislación aplicable y jurisdicción</h2>
-            <p>La relación entre Mantenimientos NL y el USUARIO se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados y tribunales de la ciudad de Málaga, salvo que la ley aplicable disponga otra cosa.</p>
+            <h2>7. Data security</h2>
+            <p>Mantenimientos NL has adopted the technical and organisational measures necessary to ensure the security and integrity of the personal data it processes, and to prevent its loss, alteration and/or access by unauthorised third parties.</p>
         </div>
     </main>
 
@@ -350,39 +367,39 @@
         <div class="container-footer">
             <div class="footer-col">
                 <h4>Mantenimientos NL</h4>
-                <p>Tu socio de confianza en Marbella para el cuidado integral de jardines y piscinas. Trato cercano, esfuerzo y resultados honestos en cada hogar.</p>
+                <p>Your trusted partner in Marbella for comprehensive garden and pool care. Personal service, hard work and honest results in every home.</p>
                 <div class="footer-social">
                     <a href="https://wa.me/34611275011" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
             <div class="footer-col">
-                <h5>Navegación</h5>
+                <h5>Navigation</h5>
                 <ul>
-                    <li><a href="index.html#inicio"><i class="fas fa-chevron-right"></i> Inicio</a></li>
-                    <li><a href="nosotros.html"><i class="fas fa-chevron-right"></i> Sobre Nosotros</a></li>
-                    <li><a href="index.html#servicios"><i class="fas fa-chevron-right"></i> Servicios</a></li>
-                    <li><a href="index.html#contacto"><i class="fas fa-chevron-right"></i> Contacto</a></li>
-                    <li><a href="politica-cookies.html"><i class="fas fa-chevron-right"></i> Política de Cookies</a></li>
+                    <li><a href="home.html#inicio"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about_en.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="home.html#servicios"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="home.html#contacto"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    <li><a href="cookie-policy_en.html"><i class="fas fa-chevron-right"></i> Cookie Policy</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h5>Legal</h5>
                 <ul>
-                    <li><a href="aviso-legal.html"><i class="fas fa-chevron-right"></i> Aviso Legal</a></li>
-                    <li><a href="terminos-condiciones.html"><i class="fas fa-chevron-right"></i> Términos y Condiciones</a></li>
-                    <li><a href="politica-privacidad.html"><i class="fas fa-chevron-right"></i> Política de Privacidad</a></li>
+                    <li><a href="legal-notice_en.html"><i class="fas fa-chevron-right"></i> Legal Notice</a></li>
+                    <li><a href="terms_en.html"><i class="fas fa-chevron-right"></i> Terms &amp; Conditions</a></li>
+                    <li><a href="privacy-policy_en.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h5>Nuestros Servicios</h5>
+                <h5>Our Services</h5>
                 <p class="footer-especialidades">
-                    <strong>Jardineros en Marbella</strong>, especialistas en <strong>Poda de Altura</strong>, expertos en <strong>Sistemas de Riego Automático</strong>, mantenimiento de comunidades y cuidado de piscinas.
+                    <strong>Gardeners in Marbella</strong>, specialists in <strong>Height Pruning</strong>, experts in <strong>Automatic Irrigation Systems</strong>, community maintenance and pool care.
                 </p>
             </div>
         </div>
         <div class="footer-divider"></div>
         <div class="copyright">
-            <p>&copy; 2026 Mantenimientos NL. Marbella, Málaga. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Mantenimientos NL. Marbella, Málaga. All rights reserved.</p>
         </div>
     </footer>
 
@@ -393,17 +410,15 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 900, once: true, offset: 60 });
-
         const menuToggle = document.getElementById('menu-toggle');
         const navegacion = document.getElementById('navegacion-principal');
         const navOverlay = document.getElementById('nav-overlay');
         const menuIcon   = menuToggle.querySelector('i');
-
-        function abrirNav() { navegacion.classList.add('activo'); navOverlay.classList.add('activo'); document.body.style.overflow = 'hidden'; menuIcon.className = 'fas fa-times'; }
-        function cerrarNav() { navegacion.classList.remove('activo'); navOverlay.classList.remove('activo'); document.body.style.overflow = ''; menuIcon.className = 'fas fa-bars'; }
-        menuToggle.addEventListener('click', () => navegacion.classList.contains('activo') ? cerrarNav() : abrirNav());
-        navOverlay.addEventListener('click', cerrarNav);
-        document.querySelectorAll('.navegacion-principal a').forEach(a => a.addEventListener('click', cerrarNav));
+        function openNav() { navegacion.classList.add('activo'); navOverlay.classList.add('activo'); document.body.style.overflow = 'hidden'; menuIcon.className = 'fas fa-times'; }
+        function closeNav() { navegacion.classList.remove('activo'); navOverlay.classList.remove('activo'); document.body.style.overflow = ''; menuIcon.className = 'fas fa-bars'; }
+        menuToggle.addEventListener('click', () => navegacion.classList.contains('activo') ? closeNav() : openNav());
+        navOverlay.addEventListener('click', closeNav);
+        document.querySelectorAll('.navegacion-principal a').forEach(a => a.addEventListener('click', closeNav));
     </script>
     <script src="cookie-banner.js"></script>
 </body>
