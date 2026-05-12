@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Mantenimientos NL - Gardeners in Marbella</title>
+    <meta name="description" content="Meet Mantenimientos NL. Over 8 years of experience in gardening, pruning, irrigation systems and pool maintenance in Marbella and surroundings.">
+    <meta name="author" content="Mantenimientos NL">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* ── VARIABLES ──────────────────────────────────────────── */
+        :root {
+            --verde:        #2E7D32;
+            --verde-oscuro: #1B5E20;
+            --verde-mint:   #E8F5E9;
+            --fondo:        #EEF4EF;
+            --fondo-alt:    #E2ECE4;
+            --texto-oscuro: #162A1C;
+            --texto-medio:  #2D5035;
+            --texto-suave:  #5A7260;
+            --sombra-suave: 0 4px 20px rgba(27,94,32,0.08);
+            --sombra-hover: 0 16px 48px rgba(27,94,32,0.18);
+            --sombra-card:  0 2px 10px rgba(0,0,0,0.05), 0 6px 22px rgba(27,94,32,0.08);
+            --trans: all 0.3s cubic-bezier(0.4,0,0.2,1);
+            --color-verde: var(--verde);
+            --color-verde-oscuro: var(--verde-oscuro);
+            --color-texto-oscuro: var(--texto-oscuro);
+            --color-blanco-roto: #F5F8F6;
+        }
+
+        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--fondo);
+            color: var(--texto-oscuro);
+            padding-top: 116px;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: var(--texto-oscuro);
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        h2 { font-size: clamp(24px, 4vw, 36px); text-align: center; }
+        p { font-size: 15px; line-height: 1.75; color: var(--texto-suave); margin-bottom: 12px; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 80px 24px; }
+
+        .subtitulo-seccion {
+            display: inline-block;
+            color: var(--verde);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            background: var(--verde-mint);
+            padding: 6px 18px;
+            border-radius: 20px;
+            margin-bottom: 14px;
+            border: 1px solid rgba(46,125,50,0.15);
+        }
+
+        /* ── BOTONES ────────────────────────────────────────────── */
+        .btn-principal, .btn-header {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            transition: var(--trans);
+            border: none;
+            cursor: pointer;
+        }
+        .btn-principal {
+            background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+            color: white;
+            padding: 14px 36px;
+            font-size: 15px;
+            box-shadow: 0 4px 18px rgba(46,125,50,0.38);
+        }
+        .btn-principal:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(46,125,50,0.48); color: white; }
+
+        .btn-header {
+            background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+            color: white;
+            padding: 10px 22px;
+            font-size: 14px;
+            box-shadow: 0 3px 12px rgba(46,125,50,0.3);
+        }
+        .btn-header:hover { box-shadow: 0 6px 20px rgba(46,125,50,0.42); transform: translateY(-2px); color: white; }
+
+        /* ── TOP BAR ────────────────────────────────────────────── */
+        .top-bar {
+            background: var(--verde-oscuro);
+            color: rgba(255,255,255,0.88);
+            padding: 9px 24px;
+            position: fixed;
+            width: 100%; top: 0; z-index: 1001; font-size: 13px;
+        }
+        .container-top { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .info-contacto-top { display: flex; gap: 24px; align-items: center; }
+        .info-contacto-top span { display: flex; align-items: center; gap: 7px; }
+        .info-contacto-top i { color: #81C784; font-size: 12px; }
+        .selector-idioma { display: flex; align-items: center; gap: 18px; }
+        .location-top { display: flex; align-items: center; gap: 6px; font-size: 12px; opacity: 0.75; }
+        .location-top i { color: #81C784; }
+        .lang-switcher { display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 20px; }
+        .lang-link { text-decoration: none; color: white; font-weight: 600; display: flex; align-items: center; gap: 5px; font-size: 12px; opacity: 0.65; transition: var(--trans); }
+        .lang-link:hover, .lang-link.active { opacity: 1; color: #A5D6A7; }
+        .lang-link img { width: 16px; border-radius: 2px; }
+        .separator { color: rgba(255,255,255,0.3); }
+
+        /* ── HEADER ─────────────────────────────────────────────── */
+        .encabezado {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 13px 40px;
+            background: rgba(255,255,255,0.96);
+            backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+            box-shadow: 0 2px 24px rgba(27,94,32,0.1);
+            position: fixed; width: 100%; top: 38px; z-index: 1000;
+        }
+        .logo a {
+            display: flex; align-items: center; gap: 12px; text-decoration: none;
+            font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 21px;
+            color: var(--verde-oscuro); letter-spacing: -0.3px;
+        }
+        .logo-img { height: 44px; width: auto; object-fit: contain; }
+        .navegacion-principal ul { display: flex; list-style: none; gap: 4px; align-items: center; }
+        .navegacion-principal a {
+            text-decoration: none; color: var(--texto-medio);
+            font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 14px;
+            padding: 8px 14px; border-radius: 8px; transition: var(--trans);
+        }
+        .navegacion-principal a:hover { color: var(--verde); background: var(--verde-mint); }
+        .menu-toggle {
+            display: none; font-size: 22px; color: var(--verde-oscuro); cursor: pointer;
+            padding: 8px 10px; border-radius: 8px; border: none; background: transparent; transition: var(--trans);
+        }
+        .menu-toggle:hover { background: var(--verde-mint); }
+        .nav-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: 998; backdrop-filter: blur(3px); }
+        .nav-overlay.activo { display: block; }
+
+        /* ── HERO ABOUT ─────────────────────────────────────────── */
+        .hero-nosotros {
+            min-height: 58vh;
+            background:
+                linear-gradient(160deg, rgba(10,46,15,0.80) 0%, rgba(27,94,32,0.68) 100%),
+                url('https://images.unsplash.com/photo-1416879573089-116f0d7e63b6?q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+            display: flex; align-items: center; justify-content: center;
+            text-align: center; padding: 60px 24px 100px;
+            position: relative; overflow: hidden;
+        }
+        .hero-nosotros::after {
+            content: '';
+            position: absolute; bottom: -1px; left: 0; right: 0;
+            height: 70px; background: var(--fondo);
+            clip-path: ellipse(56% 100% at 50% 100%);
+            pointer-events: none;
+        }
+        .hero-nosotros .subtitulo-seccion {
+            background: rgba(255,255,255,0.14);
+            color: #A5D6A7;
+            border: 1px solid rgba(165,214,167,0.4);
+        }
+        .hero-nosotros h1 {
+            font-size: clamp(28px, 6vw, 54px);
+            color: white; font-weight: 800;
+            margin-bottom: 18px; letter-spacing: -0.5px;
+        }
+        .hero-nosotros p {
+            font-size: clamp(15px, 2.4vw, 19px);
+            color: rgba(255,255,255,0.88);
+            max-width: 680px; margin-inline: auto; margin-bottom: 0;
+        }
+
+        /* ── HISTORIA ───────────────────────────────────────────── */
+        .historia-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+        .historia-texto .subtitulo-seccion { text-align: left; }
+        .historia-texto h2 {
+            text-align: left;
+            font-size: clamp(22px, 3.5vw, 34px);
+            margin-bottom: 20px;
+        }
+        .historia-texto p { font-size: 15px; }
+
+        .caja-cita {
+            background: white;
+            padding: 22px 24px 22px 28px;
+            border-left: 4px solid var(--verde);
+            border-radius: 0 12px 12px 0;
+            margin-top: 24px;
+            box-shadow: var(--sombra-card);
+        }
+        .caja-cita p {
+            margin: 0;
+            font-style: italic;
+            font-size: 15px;
+            color: var(--texto-medio);
+            font-weight: 500;
+            line-height: 1.7;
+        }
+
+        .historia-img-wrapper {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--sombra-hover);
+            border: 5px solid white;
+        }
+        .historia-img-wrapper img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ── VALUES ─────────────────────────────────────────────── */
+        .valores-seccion {
+            background: linear-gradient(135deg, #0D3B12 0%, var(--verde-oscuro) 100%);
+            padding: 80px 24px;
+            position: relative; overflow: hidden;
+        }
+        .valores-seccion::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .valores-seccion .subtitulo-seccion {
+            background: rgba(255,255,255,0.12);
+            color: #A5D6A7;
+            border: 1px solid rgba(165,214,167,0.3);
+        }
+        .valores-seccion h2 { color: white; margin-bottom: 14px; }
+        .valores-seccion .desc-seccion {
+            text-align: center;
+            max-width: 680px;
+            margin: 0 auto 52px;
+            color: rgba(255,255,255,0.68);
+            font-size: 15px;
+        }
+        .valores-seccion .seccion-header { text-align: center; }
+
+        .grid-valores {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .valor-tarjeta {
+            background: rgba(255,255,255,0.06);
+            padding: 36px 24px;
+            border-radius: 20px;
+            text-align: center;
+            transition: var(--trans);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .valor-tarjeta:hover { background: rgba(255,255,255,0.1); transform: translateY(-6px); }
+        .icono-dibujo {
+            width: 72px; height: 72px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 18px;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 18px;
+            color: #81C784;
+            font-size: 28px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .valor-tarjeta h3 { color: white; font-size: 16px; margin-bottom: 10px; }
+        .valor-tarjeta p { color: rgba(255,255,255,0.58); font-size: 13px; line-height: 1.65; margin: 0; }
+
+        /* ── CTA ────────────────────────────────────────────────── */
+        .cta-seccion { text-align: center; padding: 88px 24px; }
+        .cta-seccion h2 { margin-bottom: 14px; }
+        .cta-seccion .cta-p { max-width: 560px; margin: 0 auto 36px; font-size: 16px; }
+
+        /* ── FOOTER ─────────────────────────────────────────────── */
+        .pie-pagina { background: #0B2410; padding: 70px 0 0; }
+        .container-footer {
+            display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 48px; max-width: 1200px; margin: 0 auto; padding: 0 24px;
+        }
+        .footer-col h4, .footer-col h5 {
+            font-family: 'Poppins', sans-serif; color: white;
+            font-size: 14px; font-weight: 700; margin-bottom: 20px;
+        }
+        .footer-col > p { font-size: 13px; color: rgba(255,255,255,0.48); line-height: 1.75; margin-bottom: 0; }
+        .footer-col ul { list-style: none; padding: 0; }
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col ul li a {
+            text-decoration: none; color: rgba(255,255,255,0.5);
+            font-size: 13px; transition: var(--trans);
+            display: flex; align-items: center; gap: 8px;
+        }
+        .footer-col ul li a i { width: 16px; color: rgba(255,255,255,0.2); font-size: 11px; }
+        .footer-col ul li a:hover { color: #81C784; padding-left: 4px; }
+        .footer-social { margin-top: 20px; display: flex; gap: 10px; }
+        .footer-social a {
+            width: 38px; height: 38px; background: rgba(255,255,255,0.07);
+            border-radius: 10px; display: flex; align-items: center; justify-content: center;
+            color: rgba(255,255,255,0.5); font-size: 15px; text-decoration: none;
+            transition: var(--trans); border: 1px solid rgba(255,255,255,0.06);
+        }
+        .footer-social a:hover { background: var(--verde); color: white; border-color: transparent; transform: translateY(-3px); }
+        .footer-especialidades { font-size: 13px; line-height: 1.75; color: rgba(255,255,255,0.42); }
+        .footer-especialidades strong { color: rgba(255,255,255,0.68); font-weight: 600; }
+        .footer-divider { max-width: 1200px; margin: 56px auto 0; height: 1px; background: rgba(255,255,255,0.07); }
+        .copyright { text-align: center; padding: 22px 24px; font-size: 12px; color: rgba(255,255,255,0.28); }
+
+        /* ── WHATSAPP ───────────────────────────────────────────── */
+        .btn-whatsapp-flotante {
+            position: fixed; bottom: 28px; right: 28px;
+            background: linear-gradient(135deg, #25D366, #1DA851);
+            color: white; width: 58px; height: 58px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 28px; box-shadow: 0 6px 24px rgba(37,211,102,0.42);
+            z-index: 999; text-decoration: none; transition: var(--trans);
+        }
+        .btn-whatsapp-flotante:hover { transform: scale(1.12) translateY(-3px); color: white; }
+
+        /* ── RESPONSIVE ─────────────────────────────────────────── */
+        @media (max-width: 1024px) {
+            .container-footer { grid-template-columns: repeat(2,1fr); gap: 36px; }
+            .grid-valores { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            body { padding-top: 68px; }
+            .top-bar { display: none; }
+            .encabezado { top: 0; padding: 13px 18px; }
+            .btn-header { display: none; }
+            .menu-toggle { display: flex; }
+            .navegacion-principal {
+                position: fixed; top: 0; left: -100%;
+                width: min(300px, 82vw); height: 100dvh;
+                background: white;
+                transition: left 0.35s cubic-bezier(0.4,0,0.2,1);
+                padding: 88px 28px 40px;
+                box-shadow: 8px 0 32px rgba(0,0,0,0.14);
+                z-index: 999; overflow-y: auto;
+            }
+            .navegacion-principal.activo { left: 0; }
+            .navegacion-principal ul { flex-direction: column; gap: 4px; }
+            .navegacion-principal a { display: block; padding: 13px 18px; border-radius: 12px; font-size: 16px; }
+            .historia-grid { grid-template-columns: 1fr; gap: 40px; }
+            .historia-img-wrapper { max-width: 420px; margin: 0 auto; }
+            .container { padding: 56px 20px; }
+            .container-footer { grid-template-columns: repeat(2,1fr); gap: 32px; }
+        }
+
+        @media (max-width: 480px) {
+            .grid-valores { grid-template-columns: 1fr; }
+            .container-footer { grid-template-columns: 1fr; }
+            .logo a { font-size: 17px; }
+            .logo-img { height: 36px; }
+        }
+
+        @media (max-width: 360px) {
+            body { padding-top: 64px; }
+            .encabezado { padding: 11px 14px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ── TOP BAR ───────────────────────────────────────────── -->
+    <div class="top-bar">
+        <div class="container-top">
+            <div class="info-contacto-top">
+                <span><i class="fas fa-phone-alt"></i> +34 611 275 011</span>
+                <span><i class="fas fa-envelope"></i> servicios.mantenimientosnl@gmail.com</span>
+            </div>
+            <div class="selector-idioma">
+                <span class="location-top"><i class="fas fa-map-marker-alt"></i> Marbella</span>
+                <div class="lang-switcher">
+                    <a href="nosotros.html" class="lang-link">
+                        <img src="https://flagcdn.com/w20/es.png" alt="Español"> ES
+                    </a>
+                    <span class="separator">|</span>
+                    <a href="about_en.html" class="lang-link active">
+                        <img src="https://flagcdn.com/w20/gb.png" alt="English"> EN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── HEADER ────────────────────────────────────────────── -->
+    <header class="encabezado">
+        <div class="logo">
+            <a href="home.html">
+                <img src="LOGOTIPO.png" alt="Logo Mantenimientos NL" class="logo-img">
+                Mantenimientos NL
+            </a>
+        </div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="navegacion-principal" id="navegacion-principal">
+            <ul>
+                <li><a href="home.html#inicio">Home</a></li>
+                <li><a href="about_en.html">About</a></li>
+                <li><a href="home.html#servicios">Services</a></li>
+                <li><a href="home.html#contacto">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="home.html#contacto" class="btn-header">Free Quote</a>
+    </header>
+
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <main>
+
+        <!-- ── HERO ──────────────────────────────────────────── -->
+        <section class="hero-nosotros">
+            <div data-aos="fade-up">
+                <span class="subtitulo-seccion">About Us</span>
+                <h1>Dedication, care and a passion for work well done</h1>
+                <p>We are a team committed to looking after outdoor spaces across Marbella. From small apartments to large estates, we bring the same effort and attention to every job.</p>
+            </div>
+        </section>
+
+        <!-- ── OUR STORY ─────────────────────────────────────── -->
+        <section class="container">
+            <div class="historia-grid">
+                <div class="historia-texto" data-aos="fade-right">
+                    <span class="subtitulo-seccion">Our Story</span>
+                    <h2>Over 8 years getting our hands dirty so you can enjoy your garden</h2>
+                    <p>At <strong>Mantenimientos NL</strong> we don't believe in empty promises. We believe in consistent work, early mornings and caring for our clients' plants and water features as if they were our own.</p>
+                    <p>Over the years we have seen it all. We are proud to say we adapt to any challenge — whether it's a stubborn pest on your palm trees, an irrigation system that needs urgent updating, or a pool that requires special care. We always find the most honest and effective solution.</p>
+                    <div class="caja-cita">
+                        <p>"Our greatest reward is not recognition, but seeing a client trust us year after year and recommend us to their neighbours on the Costa del Sol."</p>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left">
+                    <div class="historia-img-wrapper">
+                        <img src="Imagen1.jpeg" alt="Professional gardener pruning in Marbella">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── WHY TRUST US ──────────────────────────────────── -->
+        <section class="valores-seccion">
+            <div style="text-align:center; margin-bottom: 52px;" data-aos="fade-up">
+                <span class="subtitulo-seccion">Why trust us</span>
+                <h2>A service designed to give you peace of mind</h2>
+                <p class="desc-seccion">No matter the size of your property. We put all our experience, the best tools and our attitude at your service to leave your garden and pool spotless.</p>
+            </div>
+
+            <div class="grid-valores">
+                <div class="valor-tarjeta" data-aos="fade-up">
+                    <div class="icono-dibujo"><i class="fas fa-calendar-check"></i></div>
+                    <h3>8+ Years of Experience</h3>
+                    <p>We know the soil, the climate and the specific challenges of gardening in Marbella and the Costa del Sol.</p>
+                </div>
+
+                <div class="valor-tarjeta" data-aos="fade-up" data-aos-delay="80">
+                    <div class="icono-dibujo"><i class="fas fa-users"></i></div>
+                    <h3>Dedicated Team</h3>
+                    <p>We are not a faceless agency. We are a hardworking, approachable team who listens to you with complete honesty.</p>
+                </div>
+
+                <div class="valor-tarjeta" data-aos="fade-up" data-aos-delay="160">
+                    <div class="icono-dibujo"><i class="fas fa-tools"></i></div>
+                    <h3>Professional Equipment</h3>
+                    <p>We invest in professional-grade machinery to deliver clean pruning cuts, efficient land clearing and safe working conditions.</p>
+                </div>
+
+                <div class="valor-tarjeta" data-aos="fade-up">
+                    <div class="icono-dibujo"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3>We Adapt to Anything</h3>
+                    <p>Steep terrain, unexpected breakdowns or urgent maintenance. We handle every setback with a positive attitude.</p>
+                </div>
+
+                <div class="valor-tarjeta" data-aos="fade-up" data-aos-delay="80">
+                    <div class="icono-dibujo"><i class="fas fa-briefcase"></i></div>
+                    <h3>All Types of Work</h3>
+                    <p>From sweeping a patio to felling a pine tree, maintaining a pool or designing your automatic irrigation system.</p>
+                </div>
+
+                <div class="valor-tarjeta" data-aos="fade-up" data-aos-delay="160">
+                    <div class="icono-dibujo"><i class="fas fa-smile-beam"></i></div>
+                    <h3>Satisfied Clients</h3>
+                    <p>Over the years we have built lasting relationships. Our work speaks for itself.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CTA ───────────────────────────────────────────── -->
+        <section class="cta-seccion">
+            <h2 data-aos="fade-up">Ready to bring your outdoor space to life?</h2>
+            <p class="cta-p" data-aos="fade-up" data-aos-delay="80">We are here to help. Tell us what you need and we will give you a fair and honest quote — no surprises, no hidden costs.</p>
+            <a href="home.html#contacto" class="btn-principal" data-aos="fade-up" data-aos-delay="160">
+                Get in touch <i class="fas fa-arrow-right"></i>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- ── FOOTER ────────────────────────────────────────────── -->
+    <footer class="pie-pagina">
+        <div class="container-footer">
+            <div class="footer-col">
+                <h4>Mantenimientos NL</h4>
+                <p>Your trusted partner in Marbella for comprehensive garden and pool care. Personal service, hard work and honest results in every home.</p>
+                <div class="footer-social">
+                    <a href="https://wa.me/34611275011" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5>Navigation</h5>
+                <ul>
+                    <li><a href="home.html#inicio"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about_en.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="home.html#servicios"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="home.html#contacto"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    <li><a href="cookie-policy_en.html"><i class="fas fa-chevron-right"></i> Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Legal</h5>
+                <ul>
+                    <li><a href="legal-notice_en.html"><i class="fas fa-chevron-right"></i> Legal Notice</a></li>
+                    <li><a href="terms_en.html"><i class="fas fa-chevron-right"></i> Terms &amp; Conditions</a></li>
+                    <li><a href="privacy-policy_en.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Our Services</h5>
+                <p class="footer-especialidades">
+                    <strong>Gardeners in Marbella</strong>, specialists in <strong>Height Pruning</strong>, experts in <strong>Automatic Irrigation Systems</strong>, community maintenance and pool care.
+                </p>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="copyright">
+            <p>&copy; 2026 Mantenimientos NL. Marbella, Málaga. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/34611275011" class="btn-whatsapp-flotante" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 900, once: true, offset: 60 });
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const navegacion = document.getElementById('navegacion-principal');
+        const navOverlay = document.getElementById('nav-overlay');
+        const menuIcon   = menuToggle.querySelector('i');
+
+        function openNav() {
+            navegacion.classList.add('activo');
+            navOverlay.classList.add('activo');
+            document.body.style.overflow = 'hidden';
+            menuIcon.className = 'fas fa-times';
+        }
+        function closeNav() {
+            navegacion.classList.remove('activo');
+            navOverlay.classList.remove('activo');
+            document.body.style.overflow = '';
+            menuIcon.className = 'fas fa-bars';
+        }
+        menuToggle.addEventListener('click', () => navegacion.classList.contains('activo') ? closeNav() : openNav());
+        navOverlay.addEventListener('click', closeNav);
+        document.querySelectorAll('.navegacion-principal a').forEach(a => a.addEventListener('click', closeNav));
+    </script>
+    <script src="cookie-banner.js"></script>
+</body>
+</html>
