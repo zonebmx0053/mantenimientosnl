@@ -997,6 +997,12 @@
             .stats-grid { grid-template-columns: 1fr; }
             .stat-item { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.08); }
         }
+        .lang-switcher-movil { display: none; align-items: center; gap: 10px; margin-top: 20px; padding: 13px 18px; background: var(--verde-mint); border-radius: 12px; }
+        .lang-link-movil { text-decoration: none; color: var(--texto-medio); font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 6px; opacity: 0.55; transition: var(--trans); }
+        .lang-link-movil.active { opacity: 1; color: var(--verde-oscuro); }
+        .lang-link-movil img { width: 18px; border-radius: 2px; }
+        .sep-movil { color: rgba(0,0,0,0.18); font-size: 13px; }
+        @media (max-width: 768px) { .lang-switcher-movil { display: flex; } }
     </style>
 </head>
 <body>
@@ -1041,6 +1047,11 @@
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
+            <div class="lang-switcher-movil">
+                <a href="inicio.html" class="lang-link-movil active"><img src="https://flagcdn.com/w20/es.png" alt="ES"> ES</a>
+                <span class="sep-movil">|</span>
+                <a href="home.html" class="lang-link-movil"><img src="https://flagcdn.com/w20/gb.png" alt="EN"> EN</a>
+            </div>
         </nav>
         <a href="#contacto" class="btn-header">Presupuesto Gratis</a>
     </header>
@@ -1263,18 +1274,19 @@
 
                 <div class="formulario-caja">
                     <h3>Cuéntanos tu proyecto</h3>
-                    <form action="#">
+                    <form action="https://formspree.io/f/xqenjznn" method="POST">
+                        <input type="hidden" name="_language" value="es">
                         <div class="campo">
                             <label>Nombre Completo</label>
-                            <input type="text" placeholder="Tu nombre" required>
+                            <input type="text" name="nombre" placeholder="Tu nombre" required>
                         </div>
                         <div class="campo">
                             <label>Teléfono</label>
-                            <input type="tel" placeholder="+34 600 000 000" required>
+                            <input type="tel" name="telefono" placeholder="+34 600 000 000" required>
                         </div>
                         <div class="campo">
                             <label>¿Qué servicio necesitas?</label>
-                            <select>
+                            <select name="servicio">
                                 <option>Mantenimiento de Jardín</option>
                                 <option>Poda de Palmeras / Altura</option>
                                 <option>Instalación de Riego</option>
@@ -1284,7 +1296,7 @@
                         </div>
                         <div class="campo">
                             <label>Mensaje</label>
-                            <textarea rows="4" placeholder="Cuéntanos qué necesitas..."></textarea>
+                            <textarea rows="4" name="mensaje" placeholder="Cuéntanos qué necesitas..."></textarea>
                         </div>
                         <button type="submit" class="btn-principal" style="width:100%;font-size:15px;padding:16px;border-radius:12px;">
                             Enviar Solicitud <i class="fas fa-paper-plane"></i>

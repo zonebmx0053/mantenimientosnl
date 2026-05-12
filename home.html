@@ -251,6 +251,12 @@
             .stats-grid { grid-template-columns:1fr; }
             .stat-item { border-right:none !important; border-bottom:1px solid rgba(255,255,255,0.08); }
         }
+        .lang-switcher-movil { display: none; align-items: center; gap: 10px; margin-top: 20px; padding: 13px 18px; background: var(--verde-mint); border-radius: 12px; }
+        .lang-link-movil { text-decoration: none; color: var(--texto-medio); font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 6px; opacity: 0.55; transition: var(--trans); }
+        .lang-link-movil.active { opacity: 1; color: var(--verde-oscuro); }
+        .lang-link-movil img { width: 18px; border-radius: 2px; }
+        .sep-movil { color: rgba(0,0,0,0.18); font-size: 13px; }
+        @media (max-width: 768px) { .lang-switcher-movil { display: flex; } }
     </style>
 </head>
 <body>
@@ -293,6 +299,11 @@
                 <li><a href="home.html#servicios">Services</a></li>
                 <li><a href="home.html#contacto">Contact</a></li>
             </ul>
+            <div class="lang-switcher-movil">
+                <a href="inicio.html" class="lang-link-movil"><img src="https://flagcdn.com/w20/es.png" alt="ES"> ES</a>
+                <span class="sep-movil">|</span>
+                <a href="home.html" class="lang-link-movil active"><img src="https://flagcdn.com/w20/gb.png" alt="EN"> EN</a>
+            </div>
         </nav>
         <a href="home.html#contacto" class="btn-header">Free Quote</a>
     </header>
@@ -507,18 +518,19 @@
 
                 <div class="formulario-caja">
                     <h3>Tell us about your project</h3>
-                    <form action="#">
+                    <form action="https://formspree.io/f/xqenjznn" method="POST">
+                        <input type="hidden" name="_language" value="en">
                         <div class="campo">
                             <label>Full Name</label>
-                            <input type="text" placeholder="Your name" required>
+                            <input type="text" name="name" placeholder="Your name" required>
                         </div>
                         <div class="campo">
                             <label>Phone</label>
-                            <input type="tel" placeholder="+34 600 000 000" required>
+                            <input type="tel" name="phone" placeholder="+34 600 000 000" required>
                         </div>
                         <div class="campo">
                             <label>Which service do you need?</label>
-                            <select>
+                            <select name="service">
                                 <option>Garden Maintenance</option>
                                 <option>Palm / Height Pruning</option>
                                 <option>Irrigation Installation</option>
@@ -528,7 +540,7 @@
                         </div>
                         <div class="campo">
                             <label>Message</label>
-                            <textarea rows="4" placeholder="Tell us what you need..."></textarea>
+                            <textarea rows="4" name="message" placeholder="Tell us what you need..."></textarea>
                         </div>
                         <button type="submit" class="btn-principal" style="width:100%;font-size:15px;padding:16px;border-radius:12px;">
                             Send Request <i class="fas fa-paper-plane"></i>
